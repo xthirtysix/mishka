@@ -9,8 +9,8 @@
         ><img
           class="page-header__logo-image"
           src="img/logo.svg"
-          width=""
-          height=""
+          width="100"
+          height="100"
           alt="Интернет-магазин «Мишка»"
       /></a>
       <nav class="main-nav">
@@ -43,26 +43,35 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main index-main">
       <!--Не уверен, правильно ли использовать здесь <header>?-->
-      <header class="page-main__header">
+      <header class="page-main__header index-main__header">
         <h1 class="page-main__title title">
           Милые штуки ручной работы для дома
         </h1>
         <ul class="categories">
-          <li class="categories__item categories__item--interrior">
-            <a href="catalog.html">Предметы интерьера</a>
+          <li>
+            <a
+              class="categories__item categories__item--interrior"
+              href="catalog.html"
+              >Предметы интерьера</a
+            >
           </li>
-          <li class="categories__item categories__item--toys">
-            <a href="catalog.html">Детские игрушки</a>
+          <li>
+            <a
+              class="categories__item categories__item--toys"
+              href="catalog.html"
+              >Детские игрушки</a
+            >
           </li>
         </ul>
       </header>
+
       <section class="product promo">
         <h2 class="product__title title">Вязаные корзинки</h2>
         <span class="promo__subtitle">Товар недели</span>
         <p class="product__text">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветах,
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
           и трех размерах.
         </p>
         <table class="product__properties properties">
@@ -84,14 +93,15 @@
           <img
             class="product__image"
             src="img/1.jpg"
-            width=""
-            height=""
+            width="100"
+            height="100"
             alt="Вязаная корзинка"
           />
         </p>
         <span class="product__prict">Цена: 990 руб.</span>
         <a class="button product__button">Заказать</a>
       </section>
+
       <section class="about-us">
         <h2 class="about-us__title title">Коротко о нас:</h2>
         <ul class="about-us__list">
@@ -121,6 +131,7 @@
           </li>
         </ul>
       </section>
+
       <section class="reviews">
         <h2 class="reviews__title title">Отзывы</h2>
         <blockquote class="reviews__item">
@@ -151,6 +162,7 @@
         </ul>
         <a href="#" class="button reviews__button">Написать</a>
       </section>
+
       <section class="contacts">
         <h2 class="contacts__title title title--small">Контакты</h2>
         <table class="contacts__list">
@@ -179,38 +191,39 @@
         </p>
         <a href="write-us.html" class="button contacts__button">Напишите нам</a>
       </section>
-      <footer class="page-footer">
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a
-              href="https://instagram.com/"
-              class="social__link social__link--instagram"
-              >Инстаграм</a
-            >
-          </li>
-          <li class="social__item">
-            <a
-              href="https://facebook.com/"
-              class="social__link social__link--facebook"
-              >Фейсбук</a
-            >
-          </li>
-          <li class="social__item">
-            <a
-              href="https://twitter.com/"
-              class="social__link social__link--twitter"
-              >Твиттер</a
-            >
-          </li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a href="" class="copyright__link">
-            <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__logo"></svg>
-          </a>
-        </div>
-      </footer>
     </main>
+
+    <footer class="page-footer">
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a
+            href="https://instagram.com/"
+            class="social__link social__link--instagram"
+            >Инстаграм</a
+          >
+        </li>
+        <li class="social__item">
+          <a
+            href="https://facebook.com/"
+            class="social__link social__link--facebook"
+            >Фейсбук</a
+          >
+        </li>
+        <li class="social__item">
+          <a
+            href="https://twitter.com/"
+            class="social__link social__link--twitter"
+            >Твиттер</a
+          >
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a href="" class="copyright__link">
+          <span class="visually-hidden">HTML Academy</span>
+          <svg class="copyright__logo"></svg>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
