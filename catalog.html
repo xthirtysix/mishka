@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>«Мишка». Интернет-магазин игрушек ручной работы.</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo"
+        ><img
+          class="page-header__logo-image"
+          src="img/logo.svg"
+          width="100"
+          height="100"
+          alt="Интернет-магазин «Мишка»"
+      /></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="order.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item main-nav__item--search">
+              <label class="main-nav__search-label" for="search"></label>
+              <input
+                class="main-nav__search-field"
+                type="search"
+                id="search"
+                name="search"
+                placeholder="Поиск по сайту"
+              />
+            </li>
+            <li class="main-nav__item main-nav__item--cart cart-item">
+              <a href="cart.html"
+                >Корзина:
+                <span class="cart-item__condition">пока пуста</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <!--Не уверен, правильно ли использовать здесь <header>?-->
+      <header class="page-main__header">
+        <h1 class="page-main__title title">
+          Каталог товаров
+        </h1>
+      </header>
+
+      <section class="goods">
+        <h2 class="visually-hidden">Товары</h2>
+        <ul class="goods__list">
+          <li class="goods__item goods-card">
+            <a href="hare.html"
+              ><h3 class="goods-card__title">Зайчик-попрыгайчик</h3></a
+            >
+            <a href="hare.html" class="goods-card__picture">
+              <img
+                class="goods-card__image"
+                src="img/zayac.jpg"
+                width="100"
+                height="100"
+                alt="Изображение Зайчика-попрыгайчика"
+              />
+            </a>
+            <p class="goods-card__text">Рост 30 см, вес 200 г</p>
+            <div class="goods-card__container">
+              <b class="goods-card__price">1 200 руб.</b>
+              <a href="order.html" class="goods-card__buy"></a>
+            </div>
+          </li>
+          <li class="goods__item goods-card">
+            <a href="basket.html"
+              ><h3 class="goods-card__title">Корзинка для белья</h3></a
+            >
+            <a href="basket.html" class="goods-card__picture">
+              <img
+                class="goods-card__image"
+                src="img/basket.jpg"
+                width="100"
+                height="100"
+                alt="Изображение корзинки для белья"
+              />
+            </a>
+            <p class="goods-card__text">Диаметр 15см, высота 10см</p>
+            <div class="goods-card__container">
+              <b class="goods-card__price">690 руб.</b
+              ><a href="order.html" class="goods-card__buy"></a>
+            </div>
+          </li>
+          <li class="goods__item goods-card">
+            <a href="toybasket.html"
+              ><h3 class="goods-card__title">
+                Большая корзинка для игрушек
+              </h3></a
+            >
+            <a href="toybasket.html" class="goods-card__picture">
+              <img
+                class="goods-card__image"
+                src="img/zayac.jpg"
+                width="100"
+                height="100"
+                alt="Изображение Большой корзинки для игрушек"
+              />
+            </a>
+            <p class="goods-card__text">Диаметр 30 см, высота 30 см</p>
+            <div class="goods-card__container">
+              <b class="goods-card__price">1 500 руб.</b
+              ><a href="order.html" class="goods-card__buy"></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="production">
+        <span class="production__icon"></span>
+        <h2 class="production__title title">Процесс производства</h2>
+        <div class="production__video-container">
+          <!--Видео-контент-->
+        </div>
+        <p class="production__text">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+          о том, как появляются наши товары.
+        </p>
+        <a href="order.html" class="button production__button">Сделать заказ</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a
+            href="https://instagram.com/"
+            class="social__link social__link--instagram"
+            >Инстаграм</a
+          >
+        </li>
+        <li class="social__item">
+          <a
+            href="https://facebook.com/"
+            class="social__link social__link--facebook"
+            >Фейсбук</a
+          >
+        </li>
+        <li class="social__item">
+          <a
+            href="https://twitter.com/"
+            class="social__link social__link--twitter"
+            >Твиттер</a
+          >
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a href="" class="copyright__link">
+          <span class="visually-hidden">HTML Academy</span>
+          <svg class="copyright__logo"></svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
