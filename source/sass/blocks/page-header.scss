@@ -1,0 +1,14 @@
+@import 'variables.scss';
+
+.page-header {
+  display: flex;
+
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  background-color: $white;
+}
+
+.page-header__logo {
+  margin: auto;
+  padding: 22px 0;
+}
