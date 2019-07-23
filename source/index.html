@@ -364,5 +364,28 @@
         </div>
       </div>
     </footer>
+    <section class="modal add-to-cart">
+       <h2 class="add-to-cart__title title">Добавить в корзину</h2>
+        <form method="POST">
+        <fieldset class="add-to-cart__options">
+          <legend class="add-to-cart__form-title">Выберите размер:</legend>
+          <ul class="add-to-cart__list">
+            <li class="add-to-cart__item">
+              <input class="add-to-cart__radio visually-hidden" type="radio" name="size" id="s" value="s" checked>
+              <label class="add-to-cart__label" for="s">S</label>
+            </li>
+            <li class="add-to-cart__item">
+              <input class="add-to-cart__radio visually-hidden" type="radio" name="size" id="m" value="m">
+              <label class="add-to-cart__label" for="m">M</label>
+            </li>
+            <li class="add-to-cart__item">
+              <input class="add-to-cart__radio visually-hidden" type="radio" name="size" id="l" value="l">
+              <label class="add-to-cart__label" for="l">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button add-to-cart__button">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
