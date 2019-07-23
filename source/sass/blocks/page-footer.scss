@@ -1,0 +1,25 @@
+.page-footer {
+  padding: 30px;
+  padding-bottom: 21px;
+
+  background-color: #f1f1f1;
+}
+
+.page-footer__copyright {
+  padding-top: 21px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.copyright__container {
+  margin: auto;
+  display: flex;
+}
+
+.copyright__text {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.copyright__link {
+  margin-right: auto;
+}
