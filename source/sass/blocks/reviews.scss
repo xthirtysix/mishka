@@ -39,6 +39,7 @@
 
 .reviews__navigation-item {
   width: 50%;
+
 }
 
 .reviews__nav-button {
@@ -52,6 +53,8 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
 
+  transition: ease-in-out .3s;
+
   &--prev {
     background-image: url("/img/icon-left-arrow.svg");
   }
@@ -59,4 +62,14 @@
   &--next {
     background-image: url("/img/icon-right-arrow.svg");
   }
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+
 }

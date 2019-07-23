@@ -10,4 +10,21 @@
 
 .copyright__link {
   margin-right: auto;
+
+  path {
+    fill: #63d1bb;
+  }
+
+  &:hover,
+  &:focus {
+    path {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: .3;
+    }
+  }
 }

@@ -17,13 +17,38 @@
   line-height: 24px;
   color: $white;
 
+  transition: ease-in-out .3s;
+
   &--interrior {
     background-color: $teal;
 
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $teal-hover;
+
+      .categories__icon {
+        opacity: .7;
+      }
+    }
   }
 
   &--toys {
     background-color: $teal-dark;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #46c1ae;
+
+      .categories__icon {
+        opacity: .7;
+      }
+    }
+  }
+
+  &:active {
+    color: rgba($white, .3);
   }
 }
 
@@ -31,16 +56,25 @@
   position: absolute;
 
   fill: #149080;
-  opacity: 0.5;
+  opacity: .5;
+
+  transition: ease-in-out .3s;
 
   &--interrior {
     bottom: 18px;
     right: 36px;
+
+
   }
 
   &--toys {
     bottom: 18px;
     right: 27px;
+
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
   }
 
   path {
