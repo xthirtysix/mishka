@@ -1,15 +1,24 @@
 .main-nav {
-  position: absolute;
-  right: 0;
+  left: 0;
 
-  align-self: center;
+  background-color: $white;
 }
 
 .main-nav__wrapper {
-  display: none;
+  position: absolute;
+  left: 0;
+  top: 80px;
+
+  width: 320px;
+
+  background-color: $white;
 }
 
 .main-nav__button {
+  position: absolute;
+  top: 8px;
+  right: 0;
+
   margin: 0;
   padding: 30px;
 
@@ -32,7 +41,7 @@
   border: none;
 
   &::before {
-    content: '';
+    content: "";
 
     position: absolute;
     top: -6px;
@@ -45,7 +54,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
 
     position: absolute;
     top: 6px;
@@ -56,4 +65,27 @@
 
     background-color: $black;
   }
+}
+
+.main-nav__list {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__item {
+  padding: 15px;
+  padding-left: 75px;
+
+  border: 1px solid #ececec;
+  border-top: none;
+}
+
+.main-nav__item a {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $graphite;
 }
