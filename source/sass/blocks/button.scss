@@ -7,7 +7,20 @@
   font-weight: 700;
   line-height: 20px;
   text-align: center;
-  color: $black;
+  color: #444444;
 
   border: 2px solid #444444;
+
+  transition: ease-in-out .3s;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba($white, .3);
+  }
 }

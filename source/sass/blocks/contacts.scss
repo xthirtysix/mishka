@@ -8,7 +8,11 @@
 
 .contacts__email {
   position: relative;
+
   color: $graphite;
+
+  transition: ease-in-out .3s;
+
   &::after {
     content: "";
 
@@ -19,7 +23,20 @@
     width: 100%;
     height: 1px;
 
-    background-color: $teal;
+    background-color: #62d1ba;
+  }
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+
+    &::after {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: .3;
   }
 }
 
