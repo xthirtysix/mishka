@@ -96,15 +96,13 @@
     top: 18px;
     left: 30px;
 
-    opacity: .2;
+    opacity: 0.2;
   }
 
   &--search,
   &--cart {
-
     &:hover,
     &:focus {
-
       .main-nav__search-label,
       svg {
         opacity: 1;
@@ -116,26 +114,24 @@
     }
 
     &:active {
-
       .main-nav__search-label,
       svg {
-        opacity: .3;
+        opacity: 0.3;
       }
     }
   }
 
   &:hover,
   &:focus {
-
     a,
     ::placeholder {
-      opacity: .6;
+      opacity: 0.6;
     }
   }
 
   &:active {
     a {
-      opacity: .3;
+      opacity: 0.3;
     }
   }
 }

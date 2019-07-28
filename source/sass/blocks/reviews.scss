@@ -39,7 +39,6 @@
 
 .reviews__navigation-item {
   width: 50%;
-
 }
 
 .reviews__nav-button {
@@ -54,7 +53,7 @@
   background-size: 50px 26px;
   background-repeat: no-repeat;
 
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 
   cursor: pointer;
 
@@ -68,11 +67,10 @@
 
   &:hover,
   &:focus {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   &:active {
-    opacity: .3;
+    opacity: 0.3;
   }
-
 }

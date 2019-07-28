@@ -1,7 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic");
 @import "variables.scss";
 @import "base.scss";
-@import "fonts.scss";
-
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/title.scss";
@@ -18,7 +17,6 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/add-to-cart.scss";
-
 @import "blocks/goods.scss";
 @import "blocks/goods-card.scss";
 @import "blocks/production.scss";
