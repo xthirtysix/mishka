@@ -5,8 +5,18 @@
   list-style: none;
 }
 
-.categories__item {
+.categories__container {
   position: relative;
+  height: 108px;
+
+  background-color: $teal;
+}
+
+
+.categories__item {
+  position: absolute;
+  top: 0;
+  left: 0;
 
   display: block;
   padding: 30px;
@@ -17,7 +27,7 @@
   line-height: 24px;
   color: $white;
 
-  transition: ease-in-out .3s;
+  transition: ease-in-out .2s;
 
   &--interrior {
     background-color: $teal;
@@ -27,9 +37,6 @@
     &:active {
       background-color: $teal-hover;
 
-      .categories__icon {
-        opacity: .7;
-      }
     }
   }
 
@@ -40,10 +47,16 @@
     &:focus,
     &:active {
       background-color: #46c1ae;
+    }
+  }
 
-      .categories__icon {
-        opacity: .7;
-      }
+  &:hover {
+    top: -5px;
+    padding-bottom: 35px;
+
+    .categories__icon {
+      bottom: 23px;
+      opacity: .7;
     }
   }
 
@@ -63,8 +76,6 @@
   &--interrior {
     bottom: 18px;
     right: 36px;
-
-
   }
 
   &--toys {

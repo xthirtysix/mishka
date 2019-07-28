@@ -1,0 +1,99 @@
+.goods-card {
+  margin-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    .goods-card__wrapper {
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &:active {
+    .goods-card__wrapper {
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.goods-card__picture {
+  display: block;
+
+  width: 260px;
+  height: 195px;
+}
+
+.goods-card__image {
+  width: 260px;
+  height: 195px;
+
+  background-color: #ececec;
+}
+
+.goods-card__wrapper {
+  padding: 30px;
+
+  border: 1px solid #ededed;
+}
+
+.goods-card__title {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 24px;
+
+  a {
+    color: $black;
+
+    &:hover,
+    &:focus {
+      opacity: .6;
+    }
+
+    &:active {
+      opacity: .3;
+    }
+  }
+
+
+}
+
+.goods-card__text {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-size: 13px;
+  color: $graphite;
+}
+
+.goods-card__buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+
+  border-top: 1px solid #ececec;
+
+  cursor: pointer;
+
+  path {
+    opacity: .2;
+
+
+  }
+
+  &:hover,
+  &:focus {
+    path {
+      fill: $teal;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: .3;
+  }
+}

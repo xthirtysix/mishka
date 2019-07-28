@@ -56,6 +56,8 @@
 
   transition: ease-in-out .3s;
 
+  cursor: pointer;
+
   &--prev {
     background-image: url("/img/icon-left-arrow.svg");
   }

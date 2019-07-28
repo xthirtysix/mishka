@@ -1,14 +1,18 @@
 .main-nav {
-  left: 0;
-
   background-color: $white;
 }
 
-.main-nav__wrapper {
-  position: absolute;
-  left: 0;
-  top: 80px;
+.main-nav__header {
+  position: relative;
+  width: 100%;
 
+  display: flex;
+
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__wrapper {
   width: 320px;
 
   background-color: $white;
@@ -25,6 +29,8 @@
   background-color: transparent;
 
   border: none;
+
+  cursor: pointer;
 }
 
 .main-nav__toggle {
@@ -76,11 +82,62 @@
 }
 
 .main-nav__item {
+  position: relative;
+
   padding: 15px;
   padding-left: 75px;
 
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   border-top: none;
+
+  &--search .main-nav__search-label,
+  &--cart svg {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+
+    opacity: .2;
+  }
+
+  &--search,
+  &--cart {
+
+    &:hover,
+    &:focus {
+
+      .main-nav__search-label,
+      svg {
+        opacity: 1;
+
+        path {
+          fill: $teal;
+        }
+      }
+    }
+
+    &:active {
+
+      .main-nav__search-label,
+      svg {
+        opacity: .3;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+
+    a,
+    ::placeholder {
+      opacity: .6;
+    }
+  }
+
+  &:active {
+    a {
+      opacity: .3;
+    }
+  }
 }
 
 .main-nav__item a {
@@ -88,4 +145,20 @@
   font-weight: 700;
   line-height: 24px;
   color: $graphite;
+}
+
+.main-nav__search-field {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $graphite;
+
+  border: none;
+
+  &::placeholder {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $graphite;
+  }
 }

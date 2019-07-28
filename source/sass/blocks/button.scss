@@ -13,6 +13,8 @@
 
   transition: ease-in-out .3s;
 
+  cursor: pointer;
+
   &:hover,
   &:focus {
     color: $white;
