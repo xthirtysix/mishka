@@ -1,0 +1,46 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 141px;
+  margin: auto;
+  padding: 0;
+  padding-bottom: 28px;
+
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  transition: ease-in-out 0.2s;
+
+  &--instagram {
+    width: 21px;
+    height: 20px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 29px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    path {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

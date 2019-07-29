@@ -1,0 +1,52 @@
+.production {
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+.production__wrapper {
+  border: 1px solid #ececec;
+}
+
+.production__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 33px;
+}
+
+.production__icon {
+  width: 90px;
+
+  path {
+    fill: $teal;
+  }
+}
+
+.production__title {
+  padding: 20px 0;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.production__video-container {
+
+  margin-bottom: 30px;
+
+  img {
+    position: relative;
+
+    width: 260px;
+    height: 150px;
+
+    background-color: $teal;
+  }
+}
+
+.production__text {
+  margin: 0;
+  padding: 0 30px;
+}
+
+.production__button {
+  margin: 30px;
+}

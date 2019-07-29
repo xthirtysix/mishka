@@ -1,0 +1,160 @@
+.main-nav {
+  background-color: $white;
+}
+
+.main-nav__header {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__wrapper {
+  width: 320px;
+
+  background-color: $white;
+}
+
+.main-nav__button {
+  position: absolute;
+  top: 8px;
+  right: 0;
+
+  margin: 0;
+  padding: 30px;
+
+  background-color: transparent;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.main-nav__toggle {
+  position: relative;
+
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 0;
+  margin-top: auto;
+
+  background-color: $black;
+
+  border: none;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -6px;
+    left: 0;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: $black;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: $black;
+  }
+}
+
+.main-nav__list {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__item {
+  position: relative;
+
+  padding: 15px;
+  padding-left: 75px;
+
+  border-bottom: 1px solid #ececec;
+  border-top: none;
+
+  &--search .main-nav__search-label,
+  &--cart svg {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+
+    opacity: 0.2;
+  }
+
+  &--search,
+  &--cart {
+    &:hover,
+    &:focus {
+      .main-nav__search-label,
+      svg {
+        opacity: 1;
+
+        path {
+          fill: $teal;
+        }
+      }
+    }
+
+    &:active {
+      .main-nav__search-label,
+      svg {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    a,
+    ::placeholder {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    a {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__item a {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+}
+
+.main-nav__search-field {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+
+  border: none;
+
+  &::placeholder {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $black;
+  }
+}

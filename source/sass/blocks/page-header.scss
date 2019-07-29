@@ -1,0 +1,21 @@
+.page-header {
+  background-color: $white;
+}
+
+.page-header__logo {
+  margin: auto;
+  padding: 22px;
+
+  line-height: 0;
+
+  transition: ease-in-out 0.3s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

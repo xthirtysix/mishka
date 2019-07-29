@@ -1,0 +1,49 @@
+.about-us {
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+.about-us__title {
+  margin-bottom: 35px;
+}
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about-us__item {
+  position: relative;
+}
+
+.about-us__text {
+  width: 200px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-top: 60px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+
+  &--wool {
+    width: 220px;
+  }
+
+  &--rocket {
+    width: 100%;
+  }
+}
+
+.about-us svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-us path {
+  fill: $teal;
+}
