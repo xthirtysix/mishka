@@ -50,7 +50,11 @@
 }
 
 .form__list-item {
-  margin-bottom: 25px;
+  margin-bottom: 31px;
+
+  &--radio {
+    margin-bottom: 17px;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -64,11 +68,10 @@
   color: $black;
 }
 
-.checkbox__label {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  color: $black;
+.radio__label {
+  &--accessory {
+    display: block;
+  }
 }
 
 .form__text-field {
@@ -89,9 +92,19 @@
   border-right: none;
   border-color: $black;
 
+  &::placeholder {
+    color: rgba($graphite, 0.3);
+  }
+
   &--phone,
   &--email {
     margin-bottom: 20px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $teal;
   }
 }
 
@@ -107,6 +120,16 @@
   border: 2px solid $black;
 
   resize: none;
+
+  &::placeholder {
+    color: rgba($graphite, 0.3);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $teal;
+  }
 }
 
 .form__footnote {
