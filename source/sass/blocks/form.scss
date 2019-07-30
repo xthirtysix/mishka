@@ -62,16 +62,12 @@
 }
 
 .form__label {
+  display: block;
+
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
   color: $black;
-}
-
-.radio__label {
-  &--accessory {
-    display: block;
-  }
 }
 
 .form__text-field {
