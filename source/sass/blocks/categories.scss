@@ -1,10 +1,13 @@
 .categories {
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin: 0;
+  padding: 0;
+
+  background-color: transparent;
 
   list-style: none;
-  background-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -22,20 +25,24 @@
   background-color: $teal;
 }
 
+@media (min-width: 768px) {
+  .categories__container {
+    height: 119px;
+  }
+}
 
 .categories__item {
   box-sizing: border-box;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
 
-  display: block;
   width: 100%;
   padding: 30px;
   padding-right: 160px;
 
-  font-weight: bold;
   font-size: 19px;
+  font-weight: bold;
   line-height: 24px;
   color: $white;
 
@@ -62,11 +69,9 @@
   }
 
   &:hover {
-    top: -5px;
     padding-bottom: 35px;
 
     .categories__icon {
-      bottom: 23px;
       opacity: 0.7;
     }
   }
@@ -82,30 +87,29 @@
 }
 
 @media (min-width: 768px) {
-  .categories__item {}
+  .categories__item {
+    padding: 35px 30px;
+
+    &:hover,
+    &:focus {
+      padding-bottom: 40px;
+    }
+  }
 }
 
 .categories__icon {
   position: absolute;
+  top: 30px;
 
-  fill: #149080;
   opacity: 0.5;
-
   transition: ease-in-out 0.3s;
 
   &--interrior {
-    bottom: 18px;
     right: 36px;
   }
 
   &--toys {
-    bottom: 18px;
     right: 27px;
-
-    &:hover,
-    &:focus {
-      opacity: 0.7;
-    }
   }
 
   path {
