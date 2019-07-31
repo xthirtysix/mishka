@@ -1,6 +1,9 @@
-.contacts__container {
-  padding: 30px;
-  padding-bottom: 0;
+.contacts__title {
+  margin-bottom: 32px;
+}
+
+.contacts__list {
+  margin-bottom: 38px;
 }
 
 .contacts__type {
@@ -43,6 +46,7 @@
 
 .contacts__map {
   margin: 0;
+  margin-bottom: 39px;
   padding: 0;
 
   line-height: 0;

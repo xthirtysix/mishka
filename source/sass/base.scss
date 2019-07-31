@@ -1,5 +1,5 @@
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
 
@@ -19,6 +19,31 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 260px;
+  padding: 0 30px;
+  margin: auto;
+
+  &--gapless {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 50px;
+    margin: auto;
+
+    &--gapless {
+      width: 768px;
+      padding: 0 50px;
+    }
+  }
 }
 
 .visually-hidden {
