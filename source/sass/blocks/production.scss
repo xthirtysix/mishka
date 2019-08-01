@@ -25,12 +25,11 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-size) {
   .production__icon {
     margin-right: 33px;
   }
 }
-
 
 .production__title {
   padding: 20px 0;
@@ -52,7 +51,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-size) {
   .production__video-container {
     box-sizing: border-box;
 

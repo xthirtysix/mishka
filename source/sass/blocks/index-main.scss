@@ -22,7 +22,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-size) {
   .index-main__title {
     max-width: 500px;
 

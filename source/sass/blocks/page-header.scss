@@ -3,7 +3,7 @@
   background-color: $white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-size) {
   .page-header {
     border-bottom: 1px solid #ececec;
   }
@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-size) {
   .page-header__logo {
     margin-left: 0;
   }

@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-size) {
   .goods__item {
     flex-direction: row;
   }

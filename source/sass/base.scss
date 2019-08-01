@@ -36,14 +36,14 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-size) {
   .container {
-    width: 768px;
+    width: $tablet-size;
     padding: 0 50px;
     margin: auto;
 
     &--gapless {
-      width: 768px;
+      width: $tablet-size;
       padding: 0 50px;
     }
   }

@@ -11,3 +11,10 @@
   font-size: 13px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-size) {
+  .order-form__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

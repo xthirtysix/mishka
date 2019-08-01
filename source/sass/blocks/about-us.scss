@@ -2,7 +2,7 @@
   padding-top: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-size) {
   .about-us {}
 }
 
@@ -19,7 +19,7 @@
   list-style: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-size) {
   .about-us__list {
     flex-wrap: wrap;
     max-height: 500px;
@@ -31,7 +31,7 @@
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-size) {
   .about-us__item {
     width: 50%;
   }
