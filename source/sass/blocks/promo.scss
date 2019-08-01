@@ -1,4 +1,5 @@
 .promo__subtitle {
+  display: block;
   margin-bottom: 30px;
 
   font-size: 17px;
@@ -6,4 +7,13 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $teal;
+}
+
+@media (min-width: 768px) {
+  .promo__subtitle {
+    max-width: 110px;
+
+    text-align: center;
+    line-height: 17px;
+  }
 }

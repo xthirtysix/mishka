@@ -2,19 +2,39 @@
   padding-top: 30px;
 }
 
+@media (min-width: 768px) {
+  .about-us {}
+}
+
 .about-us__title {
   margin-bottom: 35px;
 }
 
 .about-us__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
+@media (min-width: 768px) {
+  .about-us__list {
+    flex-wrap: wrap;
+    max-height: 500px;
+  }
+}
+
+
 .about-us__item {
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .about-us__item {
+    width: 50%;
+  }
 }
 
 .about-us__text {
