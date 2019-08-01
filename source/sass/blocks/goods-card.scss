@@ -26,6 +26,13 @@
   height: 195px;
 }
 
+@media (min-width: 768px) {
+  .goods-card__picture {
+    width: 334px;
+    height: 334px;
+  }
+}
+
 .goods-card__image {
   width: 260px;
   height: 195px;
@@ -33,10 +40,26 @@
   background-color: #ececec;
 }
 
+@media (min-width: 768px) {
+  .goods-card__image {
+    width: 334px;
+    height: 334px;
+  }
+}
+
 .goods-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 30px;
 
   border: 1px solid #ededed;
+}
+
+@media (min-width: 768px) {
+  .goods-card__wrapper {
+    flex-grow: 1;
+  }
 }
 
 .goods-card__title {
@@ -65,6 +88,12 @@
 
   font-size: 13px;
   color: $graphite;
+}
+
+@media (min-width: 758px) {
+  .goods-card__text {
+    margin-bottom: auto;
+  }
 }
 
 .goods-card__buy {

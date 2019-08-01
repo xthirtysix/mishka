@@ -1,26 +1,36 @@
 .production {
-  padding: 30px;
+  padding-top: 30px;
   padding-bottom: 0;
 }
 
 .production__wrapper {
+  display: flex;
+  flex-direction: column;
+
   border: 1px solid #ececec;
 }
 
 .production__title-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 33px;
 }
 
 .production__icon {
-  width: 90px;
+  width: 32px;
+  margin-right: 25px;
 
   path {
     fill: $teal;
   }
 }
+
+@media (min-width: 768px) {
+  .production__icon {
+    margin-right: 33px;
+  }
+}
+
 
 .production__title {
   padding: 20px 0;
@@ -39,6 +49,22 @@
     height: 150px;
 
     background-color: $teal;
+  }
+}
+
+@media (min-width: 768px) {
+  .production__video-container {
+    box-sizing: border-box;
+
+    order: -1;
+
+    width: 100%;
+    height: 455px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
