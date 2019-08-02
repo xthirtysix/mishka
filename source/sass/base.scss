@@ -30,21 +30,33 @@ img {
     width: 100%;
     padding: 0;
   }
-
-  &--reviews {
-    position: relative;
-  }
 }
 
 @media (min-width: $tablet-size) {
   .container {
-    width: $tablet-size;
+    width: 768px;
     padding: 0 50px;
     margin: auto;
 
     &--gapless {
       width: $tablet-size;
       padding: 0 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .container {
+    width: 1150px;
+    padding: 0 50px;
+
+    &--gapless {
+      width: 1150px;
+      padding: 0 50px;
+    }
+
+    &--index {
+      padding-left: 225px;
     }
   }
 }

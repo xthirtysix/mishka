@@ -33,7 +33,7 @@
 
 @media (min-width: $tablet-size) {
   .about-us__item {
-    width: 50%;
+    max-width: 350px;
   }
 }
 

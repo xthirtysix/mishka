@@ -17,3 +17,11 @@
     line-height: 17px;
   }
 }
+
+@media (min-width: $desktop-size) {
+  .promo__subtitle {
+    position: absolute;
+    top: 7px;
+    left: -130px;
+  }
+}

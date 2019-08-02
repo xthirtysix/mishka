@@ -1,4 +1,6 @@
 .product {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   padding-top: 30px;
@@ -14,6 +16,15 @@
 @media (min-width: $tablet-size) {
   .product__title-wrapper {
     flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .product__title-wrapper {
+    position: absolute;
+    top: 60px;
+    left: 225px;
+    z-index: 1;
   }
 }
 
@@ -37,7 +48,6 @@
 }
 
 .product__text {
-  padding-right: 20px;
   font-size: 15px;
   line-height: 24px;
 }
@@ -66,6 +76,14 @@
   }
 }
 
+@media (min-width: $desktop-size) {
+  .product__picture {
+    width: 525px;
+    height: 636px;
+    margin-top: 0;
+  }
+}
+
 .product__properties {
   width: 100%;
   margin-bottom: 28px;
@@ -82,9 +100,15 @@
   .product__left-column {
     &--buy {
       position: absolute;
-
       bottom: 0;
+      left: 0;
     }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .product__left-column {
+    padding-top: 155px;
   }
 }
 

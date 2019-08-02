@@ -15,6 +15,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      z-index: -1;
 
       width: 350px;
       height: 457px;
@@ -66,8 +67,8 @@
 @media (min-width: $tablet-size) {
   .reviews__navigation {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 30px;
+    right: 50px;
 
     width: 176px;
     margin: 0;
@@ -121,8 +122,8 @@
 @media (min-width: $tablet-size) {
   .reviews__button {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 30px;
+    right: 50px;
 
     width: 176px;
   }

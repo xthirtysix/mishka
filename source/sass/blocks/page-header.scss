@@ -32,3 +32,9 @@
     margin-left: 0;
   }
 }
+
+@media (min-width: $desktop-size) {
+  .page-header__logo {
+    margin: auto;
+  }
+}
