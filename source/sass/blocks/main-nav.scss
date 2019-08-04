@@ -190,7 +190,6 @@
 
   &--search,
   &--cart {
-
     &:hover,
     &:focus {
       svg {
@@ -211,7 +210,6 @@
 
   &:hover,
   &:focus {
-
     a,
     ::placeholder {
       opacity: 0.6;
@@ -223,7 +221,6 @@
       opacity: 0.3;
     }
   }
-
 }
 
 @media (min-width: $tablet-size) {
@@ -278,7 +275,6 @@
 @media (min-width: $tablet-size) {
   .main-nav__item {
     &--site-navigation {
-
       a {
         font-size: 15px;
       }

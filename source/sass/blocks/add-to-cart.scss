@@ -63,7 +63,7 @@
   list-style: none;
 }
 
-.add-to-cart__radio:checked+.add-to-cart__label {
+.add-to-cart__radio:checked + .add-to-cart__label {
   border: 2px solid $teal;
 }
 
