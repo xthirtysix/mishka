@@ -104,7 +104,7 @@
 }
 
 
-@media (min-width: $tablet-size) and (max-width: calc($desktop-size -1)) {
+@media (min-width: $tablet-size) and (max-width: $desktop-size) {
   .main-nav__list {
     flex-direction: row;
 
