@@ -19,6 +19,20 @@
   }
 }
 
+@media (min-width: $desktop-size) {
+  .goods-card {
+    width: 316px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .goods-card__wrapper {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
 .goods-card__picture {
   display: block;
 
@@ -30,6 +44,13 @@
   .goods-card__picture {
     width: 334px;
     height: 334px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .goods-card__picture {
+    width: 316px;
+    height: 462px;
   }
 }
 
