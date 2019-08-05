@@ -23,7 +23,6 @@ img {
 
 .container {
   box-sizing: border-box;
-  min-width: 260px;
   padding: 0 30px;
 
   &--gapless {
@@ -36,7 +35,7 @@ img {
   .container {
     width: 768px;
     padding: 0 50px;
-    margin: auto;
+    margin: 0 auto;
 
     &--gapless {
       width: $tablet-size;
@@ -48,6 +47,7 @@ img {
 @media (min-width: $desktop-size) {
   .container {
     width: 1150px;
+    max-width: 1150px;
     padding: 0 50px;
 
     &--gapless {

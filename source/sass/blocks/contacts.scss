@@ -1,5 +1,35 @@
+@media (min-width: $desktop-size) {
+  .contacts {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1150px;
+    max-width: 1150px;
+    min-height: 457px;
+    margin: 0 auto;
+    padding: 0 50px;
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .contacts__left-column {
+    margin-bottom: 75px;
+    padding-top: 80px;
+  }
+}
+
+
 .contacts__title {
   margin-bottom: 32px;
+}
+
+@media (min-width: $desktop-size) {
+  .contacts__title {
+    margin-bottom: 55px;
+  }
 }
 
 .contacts__list {
@@ -14,6 +44,12 @@
   .contacts__list {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .contacts__list {
+    flex-direction: column;
   }
 }
 
@@ -97,9 +133,33 @@
   }
 }
 
+@media (min-width: $desktop-size) {
+  .contacts__map {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+
+    width: 525px;
+    height: 457px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .contacts__button-wrapper {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: $tablet-size) {
   .contacts__button {
     width: 230px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .contacts__button {
+    margin-left: 175px;
   }
 }

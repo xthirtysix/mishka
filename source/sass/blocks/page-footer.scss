@@ -6,6 +6,12 @@
   background-color: #f1f1f1;
 }
 
+@media (min-width: $desktop-size) {
+  .page-footer {
+    margin-top: 105px;
+  }
+}
+
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;

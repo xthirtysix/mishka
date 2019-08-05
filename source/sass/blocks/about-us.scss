@@ -7,8 +7,7 @@
 }
 
 .about-us__list {
-  display: flex;
-  flex-direction: column;
+
   margin: 0;
   padding: 0;
 
@@ -17,8 +16,9 @@
 
 @media (min-width: $tablet-size) {
   .about-us__list {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    max-height: 500px;
   }
 }
 
@@ -29,7 +29,32 @@
 
 @media (min-width: $tablet-size) {
   .about-us__item {
+    width: 50%;
     max-width: 350px;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--banknote {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--wool {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
   }
 }
 
