@@ -2,9 +2,21 @@
   padding-bottom: 25px;
 }
 
+@media (min-width: $tablet-size) {
+  .form__container {
+    width: 100%;
+
+    background-color: #f1f1f1;
+
+    input {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
 .form__section {
   width: 260px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -33,7 +45,18 @@
 @media (min-width: $tablet-size) {
   .form__section {
     display: flex;
-    width: 100%;
+    min-width: 670px;
+    margin: 0 auto;
+
+    &--gray {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .form__section {
+    min-width: 1050px;
   }
 }
 
@@ -190,12 +213,23 @@
 .form__submit-wrapper {
   display: flex;
   flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-size) {
   .form__submit-wrapper {
     flex-direction: row-reverse;
     align-items: center;
+
+    min-width: 670px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .form__submit-wrapper {
+    width: 1050px;
   }
 }
 
@@ -214,7 +248,7 @@
 }
 
 .form__button {
-  width: 100%;
+  width: 260px;
 }
 
 @media (min-width: $tablet-size) {

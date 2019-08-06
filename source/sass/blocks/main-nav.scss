@@ -92,8 +92,8 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
@@ -107,6 +107,7 @@
 @media (min-width: $tablet-size) and (max-width: $desktop-size) {
   .main-nav__list {
     flex-direction: row;
+    width: 100%;
 
     &--site-navigation {
       box-sizing: border-box;

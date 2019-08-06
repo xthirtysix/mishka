@@ -4,8 +4,16 @@
   padding-bottom: 0;
 }
 
+@media (min-width: $tablet-size) {
+  .order-form {
+    padding: 30px 0;
+  }
+}
+
 .order-form__description {
-  margin: 0;
+
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 25px;
 
   font-size: 13px;
@@ -14,6 +22,8 @@
 
 @media (min-width: $tablet-size) {
   .order-form__description {
+    min-width: 667px;
+
     font-size: 17px;
     line-height: 30px;
   }
@@ -21,6 +31,6 @@
 
 @media (min-width: $desktop-size) {
   .order-form__description {
-    padding-left: 175px;
+    width: 700px;
   }
 }

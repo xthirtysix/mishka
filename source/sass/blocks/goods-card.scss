@@ -124,8 +124,11 @@
   padding-top: 15px;
 
   border-top: 1px solid #ececec;
+}
 
-  cursor: pointer;
+.goods-card__cart {
+  background-color: transparent;
+  border: none;
 
   path {
     opacity: 0.2;
