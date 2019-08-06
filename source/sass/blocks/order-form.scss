@@ -18,3 +18,9 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-size) {
+  .order-form__description {
+    padding-left: 175px;
+  }
+}
