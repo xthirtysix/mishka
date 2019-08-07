@@ -22,6 +22,7 @@
 
 @media (min-width: $tablet-size) {
   .order-form__description {
+    box-sizing: border-box;
     min-width: 667px;
 
     font-size: 17px;
@@ -31,7 +32,7 @@
 
 @media (min-width: $desktop-size) {
   .order-form__description {
-    width: 700px;
-    padding-left: 175px;
+    width: 1050px;
+    padding: 0 175px;
   }
 }
