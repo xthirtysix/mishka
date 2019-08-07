@@ -156,18 +156,29 @@
   position: relative;
 
   display: flex;
-  padding: 15px;
-  padding-left: 75px;
+  padding: 26px 15px 27px 75px;
 
   border-bottom: 1px solid #ececec;
   border-top: none;
 
   svg {
     position: absolute;
-    top: 18px;
-    left: 30px;
 
     opacity: 0.2;
+  }
+
+  &--search {
+    svg {
+      top: 32px;
+      left: 32px;
+    }
+  }
+
+  &--cart {
+    svg {
+      top: 31px;
+      left: 30px;
+    }
   }
 
   a {

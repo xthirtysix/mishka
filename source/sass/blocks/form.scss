@@ -21,10 +21,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  border-top: 1px solid $teal;
+  border: none;
 
   &--radio,
   &--checkbox {
@@ -61,6 +58,8 @@
 }
 
 .form__section-header {
+  position: relative;
+
   display: block;
   min-width: 64px;
 
@@ -69,12 +68,31 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $teal;
+
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 62px;
+    z-index: 1;
+
+    width: 198px;
+    height: 1px;
+
+    background-color: $teal;
+  }
 }
 
 @media (min-width: $tablet-size) {
   .form__section-header {
     box-sizing: border-box;
     width: 167px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 

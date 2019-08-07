@@ -1,3 +1,7 @@
+.contacts {
+  padding-top: 25px;
+}
+
 @media (min-width: $desktop-size) {
   .contacts {
     position: relative;
@@ -23,7 +27,12 @@
 
 
 .contacts__title {
-  margin-bottom: 32px;
+  margin-left: -2px;
+  margin-bottom: 26px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 @media (min-width: $desktop-size) {
@@ -34,7 +43,8 @@
 
 .contacts__list {
   margin: 0;
-  margin-bottom: 38px;
+  margin-left: -2px;
+  margin-bottom: 37px;
   padding: 0;
 
   list-style: none;
@@ -53,9 +63,16 @@
   }
 }
 
+.contacts__item {
+  &:first-child {
+    margin-bottom: 30px;
+  }
+}
+
 @media (min-width: $tablet-size) {
   .contacts__item {
     &:first-child {
+      margin: 0;
       margin-right: 55px;
     }
   }
@@ -116,7 +133,7 @@
 
 .contacts__map {
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
   padding: 0;
 
   line-height: 0;

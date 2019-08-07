@@ -21,7 +21,7 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
-  height: 108px;
+  height: 103px;
 
   background-color: $teal;
 
@@ -29,7 +29,6 @@
     content: "";
 
     position: absolute;
-    top: 30px;
 
     opacity: 0.2;
     transition: ease-in-out 0.2s;
@@ -37,6 +36,7 @@
 
   &--interrior {
     &::after {
+      top: 23px;
       right: 36px;
 
       width: 41px;
@@ -50,6 +50,7 @@
 
   &--toys {
     &::after {
+      top: 20px;
       right: 27px;
 
       width: 60px;
@@ -102,7 +103,7 @@
   left: 0;
 
   width: 100%;
-  padding: 30px;
+  padding: 25px 29px 30px;
   padding-right: 160px;
 
   font-size: 19px;
