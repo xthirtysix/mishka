@@ -4,13 +4,20 @@
 
 @media (min-width: $tablet-size) {
   .form__container {
-    width: 100%;
+    width: 668px;
+    margin: 0 auto;
 
     background-color: #f1f1f1;
 
     input {
       background-color: #f1f1f1;
     }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .form__container {
+    width: 875px;
   }
 }
 
@@ -42,7 +49,7 @@
 @media (min-width: $tablet-size) {
   .form__section {
     display: flex;
-    min-width: 670px;
+    min-width: 668px;
     margin: 0 auto;
 
     &--gray {
@@ -53,7 +60,7 @@
 
 @media (min-width: $desktop-size) {
   .form__section {
-    min-width: 1050px;
+    min-width: 875px;
   }
 }
 
@@ -98,7 +105,7 @@
 
 @media (min-width: $desktop-size) {
   .form__section-header {
-    width: 175px;
+    min-width: 175px;
     padding-left: 63px;
   }
 }
@@ -247,7 +254,7 @@
 
 @media (min-width: $desktop-size) {
   .form__submit-wrapper {
-    width: 1050px;
+    width: 875px;
   }
 }
 
