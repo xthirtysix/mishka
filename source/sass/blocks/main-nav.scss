@@ -1,22 +1,21 @@
 .main-nav {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
   background-color: $white;
 }
 
 @media (min-width: $tablet-size) {
   .main-nav {
+    display: flex;
     flex-direction: row;
   }
 }
 
 .main-nav__header {
   position: relative;
-  width: 100%;
 
   display: flex;
+  width: 100%;
 
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
@@ -90,8 +89,6 @@
 }
 
 .main-nav__list {
-  display: flex;
-  flex-direction: column;
   width: 320px;
   margin: 0 auto;
   padding: 0;
@@ -106,26 +103,36 @@
 
 @media (min-width: $tablet-size) and (max-width: $desktop-size) {
   .main-nav__list {
+    display: flex;
     flex-direction: row;
-    width: 100%;
+    width: auto;
+    margin: 0;
+
 
     &--site-navigation {
       box-sizing: border-box;
 
       position: absolute;
-      top: 110px;
+      top: 106px;
       left: 0;
       z-index: 10;
 
       justify-content: flex-start;
       padding: 0 50px;
     }
+
+    &--sell-navigation {
+      display: none;
+    }
   }
 }
 
 @media (min-width: $desktop-size) {
   .main-nav__list {
+    display: flex;
     flex-direction: row;
+    width: auto;
+    margin: 0;
 
     &--site-navigation {
       box-sizing: border-box;
@@ -245,10 +252,6 @@
     align-items: center;
     border: none;
 
-    svg {
-      top: 32px;
-    }
-
     &--site-navigation {
       width: 167px;
       padding: 0;
@@ -256,9 +259,14 @@
 
     &--search {
       width: auto;
-      padding-left: 63px;
+      padding-left: 67px;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
+
+      svg {
+        top: 36px;
+        left: 34px;
+      }
 
       input {
         display: none;
@@ -269,6 +277,11 @@
       justify-content: flex-end;
       min-width: 265px;
       padding-right: 0;
+
+      svg {
+        top: 34px;
+        left: 33px;
+      }
     }
   }
 }
@@ -317,7 +330,7 @@
 @media (min-width: $tablet-size) {
   .main-nav__delivery {
     position: absolute;
-    top: 110px;
+    top: 103px;
     right: 0;
     z-index: 1;
 

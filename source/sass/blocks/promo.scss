@@ -11,6 +11,10 @@
 
 @media (min-width: $tablet-size) {
   .promo__subtitle {
+    position: absolute;
+    top: 55px;
+    right: 58px;
+
     max-width: 110px;
 
     text-align: center;
@@ -20,7 +24,6 @@
 
 @media (min-width: $desktop-size) {
   .promo__subtitle {
-    position: absolute;
     top: 7px;
     left: -150px;
   }

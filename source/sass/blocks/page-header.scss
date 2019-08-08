@@ -1,11 +1,23 @@
 .page-header {
-  width: 100%;
+  box-sizing: border-box;
+
+  width: 320px;
+  margin: 0 auto;
+
   background-color: $white;
 }
 
 @media (min-width: $tablet-size) {
   .page-header {
+    width: 768px;
+
     border-bottom: 1px solid #ececec;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .page-header {
+    width: 1150px;
   }
 }
 

@@ -93,6 +93,31 @@
         padding-bottom: 40px;
       }
     }
+
+    &--interrior {
+      &::after {
+        top: 30px;
+      }
+
+      &:hover {
+        &::after {
+          top: 20px;
+        }
+      }
+    }
+
+    &--toys {
+      &::after {
+        top: 30px;
+        right: 34px;
+      }
+
+      &:hover {
+        &::after {
+          top: 20px;
+        }
+      }
+    }
   }
 }
 
@@ -145,6 +170,9 @@
 
 @media (min-width: $tablet-size) {
   .categories__item {
-    padding: 35px 30px;
+    padding: 27px 35px 31px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }
