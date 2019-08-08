@@ -72,27 +72,29 @@
         уточнить детали.
       </p>
       <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
-        <div class="form__section form__section--radio">
-          <h3 class="form__section-header">Тип</h3>
-          <ul class="form__list">
-            <li class="form__list-item form__list-item--radio">
-              <div class="radio">
-                <input class="visually-hidden radio__input" type="radio" name="order-type" id="interrior-accessory"
-                  value="interrior-accessory" checked /><label for="interrior-accessory"
-                  class="form__label radio__label radio__label--accessory">Аксессуар для интерьера</label>
-              </div>
-            </li>
-            <li class="form__list-item">
-              <div class="radio">
-                <input class="visually-hidden radio__input" type="radio" name="order-type" id="toy" value="toy" /><label
-                  for="toy" class="form__label radio__label">Детская игрушка</label>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="form__container">
-          <div class="form__section form__section--checkbox">
-            <h3 class="form__section-header">Цвет</h3>
+        <fieldset class="form__section form__section--radio">
+          <div class="form__container">
+            <legend class="form__section-header">Тип</legend>
+            <ul class="form__list">
+              <li class="form__list-item form__list-item--radio">
+                <div class="radio">
+                  <input class="visually-hidden radio__input" type="radio" name="order-type" id="interrior-accessory"
+                    value="interrior-accessory" checked /><label for="interrior-accessory"
+                    class="form__label radio__label radio__label--accessory">Аксессуар для интерьера</label>
+                </div>
+              </li>
+              <li class="form__list-item">
+                <div class="radio">
+                  <input class="visually-hidden radio__input" type="radio" name="order-type" id="toy"
+                    value="toy" /><label for="toy" class="form__label radio__label">Детская игрушка</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="form__section form__section--checkbox form__section--gray">
+          <div class="form__container">
+            <legend class="form__section-header">Цвет</legend>
             <ul class="form__list form__list--checkbox">
               <li class="form__list-item">
                 <div class="checkbox">
@@ -132,43 +134,47 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="form__section">
-          <h3 class="form__section-header">ФИО</h3>
-          <div class="form-section__container">
-            <p class="form__text-field">
-              <label for="first-name" class="form__label">Имя:</label><input class="form__text-input" type="text"
-                name="first-name" id="first-name" placeholder="Введите ваше имя*" required />
-            </p>
-            <p class="form__text-field">
-              <label for="second-name" class="form__label">Фамилия:</label><input class="form__text-input" type="text"
-                name="second-name" id="second-name" placeholder="Укажите фамилию*" required />
-            </p>
-            <p class="form__text-field">
-              <label for="third-name" class="form__label">Отчество:</label><input class="form__text-input" type="text"
-                name="third-name" id="third-name" placeholder="Отчество, если желаете" />
-            </p>
+        </fieldset>
+        <fieldset class="form__section">
+          <div class="form__container">
+            <legend class="form__section-header">ФИО</legend>
+            <ul class="form__list">
+              <li class="form__text-field">
+                <label for="first-name" class="form__label">Имя:</label><input class="form__text-input" type="text"
+                  name="first-name" id="first-name" placeholder="Введите ваше имя*" required />
+              </li>
+              <li class="form__text-field">
+                <label for="second-name" class="form__label">Фамилия:</label><input class="form__text-input" type="text"
+                  name="second-name" id="second-name" placeholder="Укажите фамилию*" required />
+              </li>
+              <li class="form__text-field">
+                <label for="third-name" class="form__label">Отчество:</label><input class="form__text-input" type="text"
+                  name="third-name" id="third-name" placeholder="Отчество, если желаете" />
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="form__container">
-          <div class="form__section form__section--phone">
+        </fieldset>
+        <fieldset class="form__section form__section--gray">
+          <div class="form__container form__container--phone">
             <label class="form__section-header" for="phone-number">Тел</label>
             <input class="form__text-input form__text-input--phone" type="tel" name="phone-number" id="phone-number"
               placeholder="+7 XXX XXX XX XX*" required />
           </div>
-          <div class="form__section form__section--email">
+          <div class="form__container form__container--email">
             <label class="form__section-header" for="email">E-mail</label>
             <input class="form__text-input form__text-input--email" type="email" name="email" id="email"
               placeholder="Ваш Email*" required />
           </div>
-        </div>
-        <div class="form__section form__section--additional">
-          <label for="additional-info" class="form__section-header">
-            Доп
-          </label>
-          <textarea class="form__text-area" name="additional-info" id="additional-info" cols="30" rows="10"
-            placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </div>
+        </fieldset>
+        <fieldset class="form__section form__section--additional">
+          <div class="form__container">
+            <label for="additional-info" class="form__section-header">
+              Доп
+            </label>
+            <textarea class="form__text-area" name="additional-info" id="additional-info" cols="30" rows="10"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+        </fieldset>
         <div class="form__submit-wrapper">
           <p class="form__footnote">
             *Поля обязательны для заполнения

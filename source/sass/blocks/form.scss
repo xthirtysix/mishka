@@ -4,20 +4,14 @@
 
 @media (min-width: $tablet-size) {
   .form__container {
-    width: 668px;
+    display: flex;
     margin: 0 auto;
-
-    background-color: #f1f1f1;
-
-    input {
-      background-color: #f1f1f1;
-    }
   }
 }
 
 @media (min-width: $desktop-size) {
   .form__container {
-    width: 875px;
+    margin: 0;
     padding-right: 175px;
   }
 }
@@ -26,15 +20,15 @@
   width: 260px;
   margin: 0 auto;
   padding: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 35px;
+  padding-bottom: 45px;
 
   border: none;
 
-  &--radio,
   &--checkbox {
-    padding-top: 35px;
-    padding-bottom: 45px;
+    .form__container {
+      padding-right: 0;
+    }
   }
 
   &--phone,
@@ -52,17 +46,26 @@
     display: flex;
     min-width: 668px;
     margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
 
     &--gray {
       background-color: #f1f1f1;
+
+      input {
+        background-color: #f1f1f1;
+      }
     }
   }
 }
 
 @media (min-width: $desktop-size) {
   .form__section {
-    min-width: 875px;
-    padding-right: 175px;
+    min-width: 1050px;
+
+    &--checkbox {
+      padding-right: 50px;
+    }
   }
 }
 
@@ -71,6 +74,7 @@
 
   display: block;
   min-width: 64px;
+  margin-bottom: 15px;
 
   font-size: 17px;
   font-weight: 700;
@@ -115,9 +119,9 @@
 .form__list {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   margin: 0;
   padding: 0;
-  padding-left: 64px;
 
   list-style: none;
 }
@@ -137,13 +141,12 @@
 
 @media (min-width: $desktop-size) {
   .form__list {
-    &--checkbox {
-      .form__list-item {
-        width: 33%;
-      }
+    .form__list-item {
+      width: 33%;
     }
   }
 }
+
 
 .form__list-item {
   margin-bottom: 31px;
@@ -184,7 +187,7 @@
 }
 
 .form__text-input {
-  width: 100%;
+  flex-grow: 1;
   height: 50px;
 
   font-size: 17px;
@@ -202,6 +205,7 @@
 
   &--phone,
   &--email {
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -209,6 +213,15 @@
   &:focus,
   &:active {
     border-color: $teal;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .form__text-input {
+    &--phone,
+    &--email {
+      width: auto;
+    }
   }
 }
 
