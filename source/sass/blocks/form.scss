@@ -11,8 +11,7 @@
 
 @media (min-width: $desktop-size) {
   .form__container {
-    margin: 0;
-    padding-right: 175px;
+    padding-right: 225px;
   }
 }
 
@@ -44,10 +43,8 @@
 @media (min-width: $tablet-size) {
   .form__section {
     display: flex;
-    min-width: 668px;
+    width: 100%;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
 
     &--gray {
       background-color: #f1f1f1;
@@ -55,16 +52,6 @@
       input {
         background-color: #f1f1f1;
       }
-    }
-  }
-}
-
-@media (min-width: $desktop-size) {
-  .form__section {
-    min-width: 1050px;
-
-    &--checkbox {
-      padding-right: 50px;
     }
   }
 }

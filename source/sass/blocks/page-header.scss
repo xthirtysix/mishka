@@ -1,4 +1,14 @@
 .page-header {
+  width: 100%;
+}
+
+@media (min-width: $tablet-size) {
+  .page-header {
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.page-header__container {
   box-sizing: border-box;
 
   width: 320px;
@@ -8,15 +18,13 @@
 }
 
 @media (min-width: $tablet-size) {
-  .page-header {
+  .page-header__container {
     width: 768px;
-
-    border-bottom: 1px solid #ececec;
   }
 }
 
 @media (min-width: $desktop-size) {
-  .page-header {
+  .page-header__container {
     width: 1150px;
   }
 }
