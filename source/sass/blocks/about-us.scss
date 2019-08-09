@@ -1,21 +1,57 @@
 .about-us {
-  padding: 30px;
-  padding-bottom: 0;
+  padding-top: 17px;
 }
 
 .about-us__title {
-  margin-bottom: 35px;
+  margin-left: -2px;
+  margin-bottom: 32px;
 }
 
 .about-us__list {
+
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.about-us__item {
-  position: relative;
+@media (min-width: $tablet-size) {
+  .about-us__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .about-us__item {
+    width: 50%;
+    max-width: 350px;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--banknote {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--wool {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
 }
 
 .about-us__text {
@@ -23,11 +59,15 @@
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  padding-top: 60px;
+  padding-top: 53px;
 
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
+
+  &--flower {
+    width: 190px;
+  }
 
   &--wool {
     width: 220px;
@@ -38,10 +78,54 @@
   }
 }
 
-.about-us svg {
-  position: absolute;
-  top: 0;
-  left: 0;
+.about-us__item {
+  position: relative;
+
+  svg {
+    position: absolute;
+  }
+
+  &--flower {
+    svg {
+      top: 0;
+      left: 8px;
+    }
+  }
+
+  &--banknote {
+    svg {
+      top: 1px;
+      left: 0;
+    }
+  }
+
+  &--heart {
+    svg {
+      top: 5px;
+      left: 8px;
+    }
+  }
+
+  &--wool {
+    svg {
+      top: 3px;
+      left: 3px;
+    }
+  }
+
+  &--rocket {
+    svg {
+      top: 4px;
+      left: -5px;
+    }
+  }
+
+  &--gift {
+    svg {
+      top: 2px;
+      left: 3px;
+    }
+  }
 }
 
 .about-us path {

@@ -1,3 +1,15 @@
+.separator {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.separator svg {
+  width: 320px;
+  height: 8px;
+
+  transform: rotate(180deg);
+}
+
 .separator path {
   fill: #f1f1f1;
 }

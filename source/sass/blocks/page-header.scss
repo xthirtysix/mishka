@@ -1,10 +1,37 @@
 .page-header {
+  width: 100%;
+}
+
+@media (min-width: $tablet-size) {
+  .page-header {
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.page-header__container {
+  box-sizing: border-box;
+
+  width: 320px;
+  margin: 0 auto;
+
   background-color: $white;
+}
+
+@media (min-width: $tablet-size) {
+  .page-header__container {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .page-header__container {
+    width: 1150px;
+  }
 }
 
 .page-header__logo {
   margin: auto;
-  padding: 22px;
+  padding: 22px 0 21px 0;
 
   line-height: 0;
 
@@ -17,5 +44,17 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .page-header__logo {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .page-header__logo {
+    margin: auto;
   }
 }

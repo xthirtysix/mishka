@@ -1,5 +1,5 @@
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
 
@@ -19,6 +19,47 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  box-sizing: border-box;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  &--gapless {
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .container {
+    width: 768px;
+    padding: 0 50px;
+
+    &--gapless {
+      width: $tablet-size;
+      padding: 0 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .container {
+    width: 1150px;
+    max-width: 1150px;
+    padding: 0 50px;
+
+    &--gapless {
+      width: 1150px;
+      padding: 0 50px;
+    }
+
+    &--index {
+      padding-left: 225px;
+    }
+  }
 }
 
 .visually-hidden {

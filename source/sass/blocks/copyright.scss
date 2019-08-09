@@ -1,15 +1,21 @@
 .copyright__container {
   margin: auto;
   display: flex;
+  align-items: center;
 }
 
 .copyright__text {
   margin-left: auto;
   margin-right: 30px;
+
+  font-size: 19px;
+  line-height: 18px;
 }
 
 .copyright__link {
   margin-right: auto;
+  width: 27px;
+  height: 34px;
 
   path {
     fill: #63d1bb;

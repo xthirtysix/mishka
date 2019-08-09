@@ -1,9 +1,30 @@
 .promo__subtitle {
-  margin-bottom: 30px;
+  display: block;
+  margin-bottom: 23px;
 
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   color: $teal;
+}
+
+@media (min-width: $tablet-size) {
+  .promo__subtitle {
+    position: absolute;
+    top: 55px;
+    right: 58px;
+
+    max-width: 110px;
+
+    text-align: center;
+    line-height: 17px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .promo__subtitle {
+    top: 7px;
+    left: -150px;
+  }
 }
