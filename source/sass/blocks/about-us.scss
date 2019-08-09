@@ -2,9 +2,22 @@
   padding-top: 17px;
 }
 
+@media (min-width: $tablet-size) {
+  .about-us {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+}
+
 .about-us__title {
   margin-left: -2px;
   margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-size) {
+  .about-us__title {
+    margin-bottom: 50px;
+  }
 }
 
 .about-us__list {
@@ -75,6 +88,26 @@
 
   &--rocket {
     width: 100%;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .about-us__text {
+    width: 300px;
+    margin-bottom: 58px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &--flower {
+      width: 230px;
+    }
+
+    &--banknote,
+    &--heart,
+    &--gift {
+      width: 240px;
+    }
   }
 }
 

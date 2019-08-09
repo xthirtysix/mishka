@@ -7,6 +7,12 @@
   padding-bottom: 21px;
 }
 
+@media (min-width: $tablet-size) {
+  .product {
+    padding-bottom: 47px;
+  }
+}
+
 @media (min-width: $desktop-size) {
   .product {
     justify-content: space-between;
