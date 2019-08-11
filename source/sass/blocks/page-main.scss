@@ -10,17 +10,28 @@
       content: "";
 
       position: absolute;
-      left: 0;
+      left: -24px;
       bottom: -10px;
 
-      width: 100%;
+      width: 200%;
       height: 24px;
 
       z-index: 1000;
 
       background-image: url("/img/bg-zigzag-fill.svg");
-      background-repeat: repeat;
+      background-repeat: repeat-x;
       background-size: 770px 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .page-main__header {
+    &::after {
+      height: 34px;
+      left: -26px;
+
+      background-size: 1150px 34px;
     }
   }
 }
@@ -28,8 +39,8 @@
 .page-main__title {
   max-width: 260px;
   margin: auto;
-  margin-top: 45px;
-  margin-bottom: 45px;
+  margin-top: 42px;
+  margin-bottom: 46px;
 
   font-size: 27px;
 
@@ -39,8 +50,8 @@
 @media (min-width: $tablet-size) {
   .page-main__title {
     max-width: 100%;
-    margin-top: 100px;
-    margin-bottom: 85px;
+    margin-top: 65px;
+    margin-bottom: 52px;
 
     font-size: 43px;
     line-height: 50px;
@@ -50,6 +61,8 @@
 @media (min-width: $desktop-size) {
   .page-main__title {
     min-width: 700px;
+    margin-top: 63px;
+    margin-bottom: 80px;
 
     font-size: 53px;
     line-height: 57px;

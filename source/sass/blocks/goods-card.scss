@@ -19,6 +19,12 @@
   }
 }
 
+@media (min-width: $tablet-size) {
+  .goods-card {
+    margin-bottom: 54px;
+  }
+}
+
 @media (min-width: $desktop-size) {
   .goods-card {
     width: 316px;
@@ -26,10 +32,28 @@
   }
 }
 
+.goods-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 27px;
+  padding-bottom: 24px;
+
+  border: 1px solid #ededed;
+}
+
+@media (min-width: $tablet-size) {
+  .goods-card__wrapper {
+    flex-grow: 1;
+    padding-bottom: 27px;
+  }
+}
+
 @media (min-width: $desktop-size) {
   .goods-card__wrapper {
     box-sizing: border-box;
     width: 100%;
+    padding: 25px;
   }
 }
 
@@ -63,28 +87,21 @@
 
 @media (min-width: $tablet-size) {
   .goods-card__image {
-    width: 334px;
+    min-width: 334px;
     height: 334px;
   }
 }
 
-.goods-card__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-
-  border: 1px solid #ededed;
-}
-
-@media (min-width: $tablet-size) {
-  .goods-card__wrapper {
-    flex-grow: 1;
+@media (min-width: $desktop-size) {
+  .goods-card__image {
+    min-width: 316px;
+    height: 462px;
   }
 }
 
 .goods-card__title {
   margin: 0;
+  margin-bottom: 4px;
 
   font-size: 17px;
   line-height: 24px;
@@ -103,17 +120,37 @@
   }
 }
 
+@media (min-width: $tablet-size) {
+  .goods-card__title {
+    font-size: 20px;
+    line-height: 24px;
+
+    &--toy-basket {
+      padding-right: 50px;
+    }
+  }
+}
+
 .goods-card__text {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 
   font-size: 13px;
   color: $graphite;
 }
 
-@media (min-width: 758px) {
+@media (min-width: $tablet-size) {
   .goods-card__text {
     margin-bottom: auto;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .goods-card__text {
+    margin-bottom: 15px;
   }
 }
 
@@ -121,12 +158,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 18px;
 
   border-top: 1px solid #ececec;
 }
 
+@media (min-width: $tablet-size) {
+  .goods-card__buy {
+    padding: 22px 4px 0;
+  }
+
+  .goods-card__price {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .goods-card__buy {
+    margin-top: auto;
+    padding-left: 0;
+    padding-right: 7px;
+  }
+}
+
 .goods-card__cart {
+  padding: 0;
   background-color: transparent;
   border: none;
 
