@@ -24,6 +24,17 @@
   }
 }
 
+@media (min-width: $desktop-size) {
+  .separator {
+    width: 1050px;
+    margin: 0 auto;
+
+    svg {
+      height: 23px;
+    }
+  }
+}
+
 .separator path {
   fill: #f1f1f1;
 }

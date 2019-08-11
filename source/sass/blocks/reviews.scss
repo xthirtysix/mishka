@@ -28,6 +28,17 @@
   }
 }
 
+@media (min-width: $desktop-size) {
+  .reviews {
+    margin-bottom: 162px;
+
+    &::before {
+      top: 7px;
+      left: 50px;
+    }
+  }
+}
+
 .reviews__title {
   margin-left: -2px;
   margin-bottom: 24px;
@@ -58,6 +69,14 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-size) {
+  .reviews__text {
+    margin-bottom: 37px;
+    padding-right: 105px;
+  }
+}
+
 
 .reviews__authors-name {
   font-size: 17px;
@@ -150,5 +169,11 @@
     right: 50px;
 
     width: 176px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .reviews__button {
+    top: 85px;
   }
 }

@@ -15,7 +15,7 @@
   position: relative;
 
   display: flex;
-  width: 100%;
+  flex-grow: 2;
 
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
@@ -131,7 +131,7 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    width: auto;
+    min-width: 380px;
     margin: 0;
 
     &--site-navigation {
@@ -147,7 +147,7 @@
 
     &--sell-navigation {
       position: absolute;
-      top: 110px;
+      top: 107px;
       left: 0;
       z-index: 1;
 
@@ -209,6 +209,7 @@
 
   &--search,
   &--cart {
+
     &:hover,
     &:focus {
       svg {
@@ -229,6 +230,7 @@
 
   &:hover,
   &:focus {
+
     a,
     ::placeholder {
       opacity: 0.6;
@@ -255,6 +257,10 @@
     &--site-navigation {
       width: 167px;
       padding: 0;
+
+      a {
+        font-size: 15px;
+      }
     }
 
     &--search {
@@ -286,20 +292,46 @@
   }
 }
 
+
 @media (min-width: $desktop-size) {
   .main-nav__item {
+    width: auto;
+    padding-top: 30px;
+    padding-bottom: 34px;
+
+    a {
+      font-size: 17px;
+    }
+
     &--sell-navigation {
       padding: 0;
 
       font-size: 15px;
       line-height: 24px;
-    }
-  }
-}
 
-@media (min-width: $tablet-size) {
-  .main-nav__item {
+      &:first-child {
+        width: 185px;
+        margin-right: 35px;
+      }
+    }
+
     &--site-navigation {
+      padding-left: 35px;
+
+      &:first-child {
+        width: 185px;
+        padding-left: 0;
+        padding-right: 35px;
+
+        border-right: 1px solid #ececec;
+      }
+    }
+
+    &--search {
+      margin-left: auto;
+    }
+
+    &--sell-navigation {
       a {
         font-size: 15px;
       }

@@ -23,3 +23,9 @@
     margin-bottom: 375px;
   }
 }
+
+@media (min-width: $desktop-size) {
+  .index-main__title {
+    margin-bottom: 360px;
+  }
+}

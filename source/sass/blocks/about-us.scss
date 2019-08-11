@@ -9,6 +9,12 @@
   }
 }
 
+@media (min-width: $desktop-size) {
+  .about-us {
+    padding-top: 49px;
+  }
+}
+
 .about-us__title {
   margin-left: -2px;
   margin-bottom: 32px;
