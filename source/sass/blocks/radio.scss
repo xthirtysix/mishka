@@ -1,0 +1,40 @@
+.radio__label {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    box-sizing: border-box;
+    position: absolute;
+    top: -8px;
+    left: 0;
+
+    width: 38px;
+    height: 38px;
+
+    background-color: transparent;
+    border: 1px solid $black;
+    border-radius: 50%;
+  }
+}
+
+
+.radio__input {
+  &:checked {
+    &+.radio__label {
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 3px;
+        left: 11px;
+
+        width: 16px;
+        height: 16px;
+
+        background-color: $teal;
+        border-radius: 50%;
+      }
+    }
+  }
+}

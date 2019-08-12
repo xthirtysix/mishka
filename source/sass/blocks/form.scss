@@ -1,5 +1,5 @@
 .form {
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 @media (min-width: $tablet-size) {
@@ -18,16 +18,21 @@
 .form__section {
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 20px;
   padding: 0;
-  padding-top: 35px;
-  padding-bottom: 45px;
 
   border: none;
 
   &--checkbox {
+    margin-bottom: -1px;
+
     .form__container {
       padding-right: 0;
     }
+  }
+
+  &--name {
+    margin-bottom: 10px;
   }
 
   &--phone,
@@ -36,7 +41,20 @@
   }
 
   &--additional {
+    margin-bottom: 7px;
     padding-top: 25px;
+  }
+
+  &--user-contacts {
+    margin-bottom: 7px;
+
+    .form__container {
+      margin-bottom: 32px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -61,7 +79,7 @@
 
   display: block;
   min-width: 64px;
-  margin-bottom: 15px;
+  margin-bottom: 34px;
 
   font-size: 17px;
   font-weight: 700;
@@ -82,6 +100,23 @@
     height: 1px;
 
     background-color: $teal;
+  }
+
+  &--color {
+    margin-bottom: 36px;
+  }
+
+  &--name {
+    margin-bottom: 28px;
+  }
+
+  &--phone,
+  &--email {
+    margin-bottom: 5px;
+  }
+
+  &--additional {
+    margin-bottom: 25px;
   }
 }
 
@@ -138,12 +173,16 @@
 .form__list-item {
   margin-bottom: 31px;
 
-  &--radio {
-    margin-bottom: 17px;
+  .form__label {
+    padding-left: 63px;
   }
 
-  &:last-child {
-    margin-bottom: 0;
+  &--radio {
+    margin-bottom: 24px;
+  }
+
+  &--checkbox {
+    margin-bottom: 43px;
   }
 }
 
@@ -164,6 +203,7 @@
 .form__text-field {
   display: flex;
   flex-direction: column;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-size) {
@@ -175,7 +215,7 @@
 
 .form__text-input {
   flex-grow: 1;
-  height: 50px;
+  height: 48px;
 
   font-size: 17px;
   line-height: 18px;
@@ -193,7 +233,7 @@
   &--phone,
   &--email {
     width: 100%;
-    margin-bottom: 20px;
+    height: 50px;
   }
 
   &:hover,
@@ -205,6 +245,7 @@
 
 @media (min-width: $tablet-size) {
   .form__text-input {
+
     &--phone,
     &--email {
       width: auto;
@@ -216,6 +257,7 @@
 .form__text-area {
   box-sizing: border-box;
   width: 100%;
+  height: 142px;
   padding: 15px;
 
   font-size: 17px;
@@ -265,7 +307,7 @@
 
 .form__footnote {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   font-size: 14px;
   line-height: 16px;
