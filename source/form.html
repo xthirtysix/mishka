@@ -36,7 +36,7 @@
             <a href="#">Распродажа</a>
           </li>
         </ul>
-        <a href="#" class="main-nav__delivery">Бесплатная доставка</a>
+        <a href="#" class="main-nav__delivery">Бесплатная доставка по России</a>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--search">
             <label class="main-nav__search-label" for="search">
@@ -79,18 +79,14 @@
           <div class="form__container container">
             <legend class="form__section-header">Тип</legend>
             <ul class="form__list">
-              <li class="form__list-item form__list-item--radio">
-                <div class="radio">
-                  <input class="visually-hidden radio__input" type="radio" name="order-type" id="interrior-accessory"
-                    value="interrior-accessory" checked /><label for="interrior-accessory"
-                    class="form__label radio__label radio__label--accessory">Аксессуар для интерьера</label>
-                </div>
+              <li class="form__list-item form__list-item--radio radio">
+                <input class="visually-hidden radio__input" type="radio" name="order-type" id="interrior-accessory"
+                  value="interrior-accessory" checked /><label for="interrior-accessory"
+                  class="form__label radio__label radio__label--accessory">Аксессуар для интерьера</label>
               </li>
-              <li class="form__list-item form__list-item--radio">
-                <div class="radio">
-                  <input class="visually-hidden radio__input" type="radio" name="order-type" id="toy"
-                    value="toy" /><label for="toy" class="form__label radio__label">Детская игрушка</label>
-                </div>
+              <li class="form__list-item form__list-item--radio radio">
+                <input class="visually-hidden radio__input" type="radio" name="order-type" id="toy" value="toy" /><label
+                  for="toy" class="form__label radio__label">Детская игрушка</label>
               </li>
             </ul>
           </div>
@@ -99,41 +95,29 @@
           <div class="form__container container">
             <legend class="form__section-header form__section-header--color">Цвет</legend>
             <ul class="form__list form__list--checkbox">
-              <li class="form__list-item form__list-item--checkbox">
-                <div class="checkbox">
-                  <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-white"
-                    value="white" checked /><label for="color-white" class="form__label checkbox__label">Белый</label>
-                </div>
+              <li class="form__list-item form__list-item--checkbox checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-white"
+                  value="white" checked /><label for="color-white" class="form__label checkbox__label">Белый</label>
+              </li>
+              <li class="form__list-item form__list-item--checkbox checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-grey" value="grey"
+                  checked /><label for="color-grey" class="form__label checkbox__label">Серый</label>
+              </li>
+              <li class="form__list-item form__list-item--checkbox checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-tiffany"
+                  value="tiffany" /><label for="color-tiffany" class="form__label checkbox__label">«Тиффани»</label>
+              </li>
+              <li class="form__list-item form__list-item--checkbox checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-black"
+                  value="black" /><label for="color-black" class="form__label checkbox__label">Черный</label>
+              </li>
+              <li class="form__list-item form__list-item--checkbox checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-pink"
+                  value="pink" /><label for="color-pink" class="form__label  checkbox__label">Розовый</label>
               </li>
               <li class="form__list-item form__list-item--checkbox">
-                <div class="checkbox">
-                  <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-grey"
-                    value="grey" checked /><label for="color-grey" class="form__label checkbox__label">Серый</label>
-                </div>
-              </li>
-              <li class="form__list-item form__list-item--checkbox">
-                <div class="checkbox">
-                  <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-tiffany"
-                    value="tiffany" /><label for="color-tiffany" class="form__label checkbox__label">«Тиффани»</label>
-                </div>
-              </li>
-              <li class="form__list-item form__list-item--checkbox">
-                <div class="checkbox">
-                  <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-black"
-                    value="black" /><label for="color-black" class="form__label checkbox__label">Черный</label>
-                </div>
-              </li>
-              <li class="form__list-item form__list-item--checkbox">
-                <div class="checkbox">
-                  <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-pink"
-                    value="pink" /><label for="color-pink" class="form__label  checkbox__label">Розовый</label>
-                </div>
-              </li>
-              <li class="form__list-item form__list-item--checkbox">
-                <div class="checkbox">
-                  <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-orange"
-                    value="orange" /><label for="color-orange" class="form__label  checkbox__label">Оранжевый</label>
-                </div>
+                <input class="visually-hidden checkbox__input" type="checkbox" name="color" id="color-orange"
+                  value="orange" /><label for="color-orange" class="form__label  checkbox__label">Оранжевый</label>
               </li>
             </ul>
           </div>
@@ -160,13 +144,17 @@
         <fieldset class="form__section form__section--gray form__section--user-contacts">
           <div class="form__container form__container--phone container">
             <label class="form__section-header form__section-header--phone" for="phone-number">Тел</label>
-            <input class="form__text-input form__text-input--phone" type="tel" name="phone-number" id="phone-number"
-              placeholder="+7 XXX XXX XX XX*" required />
+            <div class="form__input-wrapper form__input-wrapper--phone">
+              <input class="form__text-input form__text-input--phone" type="tel" name="phone-number" id="phone-number"
+                placeholder="+7 XXX XXX XX XX*" required />
+            </div>
           </div>
           <div class="form__container form__container--email container">
             <label class="form__section-header form__section-header--email" for="email">E-mail</label>
-            <input class="form__text-input form__text-input--email" type="email" name="email" id="email"
-              placeholder="Ваш Email*" required />
+            <div class="form__input-wrapper form__input-wrapper--email">
+              <input class="form__text-input form__text-input--email" type="email" name="email" id="email"
+                placeholder="Ваш Email*" required />
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__section form__section--additional">
@@ -190,7 +178,7 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--form">
     <div class="page-footer__wrapper container">
       <a href="index.html" class="page-footer__logo"><img class="page-footer__logo-image" src="img/logo-mobile.svg"
           width="86" height="35" alt="Интернет-магазин «Мишка»" /></a>

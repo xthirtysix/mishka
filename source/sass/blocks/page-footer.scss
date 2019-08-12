@@ -10,12 +10,20 @@
   .page-footer {
     padding-top: 50px;
     margin-top: 56px;
+
+    &--form {
+      margin-top: 34px;
+    }
   }
 }
 
 @media (min-width: $desktop-size) {
   .page-footer {
     margin-top: 105px;
+
+    &--form {
+      margin-top: 35px;
+    }
   }
 }
 
