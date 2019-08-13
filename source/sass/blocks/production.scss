@@ -5,13 +5,17 @@
 
 @media (min-width: $tablet-size) {
   .production {
-    padding-bottom: 6px;
+    position: relative;
+
+    padding: 455px 50px 6px;
+    padding-top: 455px;
   }
 }
 
 @media (min-width: $desktop-size) {
   .production {
-    padding-bottom: 0;
+    padding: 0 50px;
+    display: flex;
   }
 }
 
@@ -20,17 +24,26 @@
   flex-direction: column;
 
   border: 1px solid #ececec;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  }
 }
+
 
 @media (min-width: $desktop-size) {
   .production__wrapper {
     box-sizing: border-box;
 
-    position: relative;
-
+    width: 1050px;
     min-height: 455px;
-    padding-left: 760px;
     padding-right: 56px;
+    padding-left: 759px;
   }
 }
 
@@ -53,7 +66,7 @@
     flex-direction: column;
     margin-bottom: 10px;
     padding: 0;
-    padding-top: 41px;
+    padding-top: 22px;
   }
 }
 
@@ -69,6 +82,7 @@
 @media (min-width: $tablet-size) {
   .production__icon {
     margin-right: 33px;
+    padding-top: 19px;
   }
 }
 
@@ -86,6 +100,7 @@
 
 @media (min-width: $tablet-size) {
   .production__title {
+    padding-top: 37px;
     font-size: 20px;
   }
 }
@@ -100,22 +115,27 @@
   position: relative;
   margin-bottom: 18px;
 
-  &::before {
-    content: "";
+  svg {
 
     position: absolute;
     z-index: 10;
-    top: 50%;
-    left: 50%;
+    top: 37px;
+    left: 80px;
 
     width: 101px;
     height: 78px;
 
-    background-image: url("/img/icon-play.svg");
-    background-size: 101px 78px;
-    background-repeat: no-repeat;
+    transition: 0.2s ease-in-out;
 
-    transform: translateX(-50%) translateY(-50%);
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(0.8);
+      opacity: 0.8;
+    }
   }
 
   img {
@@ -129,14 +149,21 @@
 @media (min-width: $tablet-size) {
   .production__video-container {
     box-sizing: border-box;
-    order: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-    width: 100%;
+    width: 668px;
     height: 455px;
+    margin: 0 50px;
     margin-bottom: 14px;
 
     border-bottom: 1px solid #ececec;
 
+    svg {
+      top: 190px;
+      left: 300px;
+    }
 
     img {
       width: 100%;
@@ -195,6 +222,6 @@
 
 @media (min-width: $desktop-size) {
   .production__button {
-    margin: 0;
+    margin: 0 0 30px;
   }
 }

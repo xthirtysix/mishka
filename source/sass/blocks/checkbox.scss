@@ -14,7 +14,19 @@
 
     background-color: transparent;
     border: 2px solid $black;
+  }
 
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: $teal;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #c7c7c7;
+    }
   }
 }
 
@@ -31,7 +43,7 @@
 
 .checkbox__input {
   &:checked {
-    &+.checkbox__label {
+    & + .checkbox__label {
       &::after {
         content: "";
 
@@ -53,7 +65,7 @@
 @media (min-width: $tablet-size) {
   .checkbox__input {
     &:checked {
-      &+.checkbox__label {
+      & + .checkbox__label {
         &::after {
           top: 0;
           left: 10px;

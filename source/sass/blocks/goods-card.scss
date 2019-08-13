@@ -45,6 +45,7 @@
 @media (min-width: $tablet-size) {
   .goods-card__wrapper {
     flex-grow: 1;
+    max-width: 278px;
     padding-bottom: 27px;
   }
 }
