@@ -83,12 +83,14 @@
 
 @media (min-width: $tablet-size) {
   .production__icon {
+    margin-top: 8px;
     margin-right: 33px;
   }
 }
 
 @media (min-width: $desktop-size) {
   .production__icon {
+    margin-top: 0;
     margin-right: auto;
   }
 }
@@ -114,6 +116,8 @@
 .production__video-container {
   position: relative;
   margin-bottom: 18px;
+
+  overflow: hidden;
 
   svg {
 

@@ -2,8 +2,16 @@
   padding-bottom: 15px;
 }
 
+.form__container {
+  width: 260px;
+  padding: 0;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-size) {
   .form__container {
+    width: 768px;
+    padding: 0 50px;
     display: flex;
     margin: 0 auto;
   }
@@ -11,6 +19,10 @@
 
 @media (min-width: $desktop-size) {
   .form__container {
+    width: 1150px;
+    max-width: 1150px;
+    padding: 0 50px;
+
     padding-right: 225px;
   }
 }
@@ -79,10 +91,10 @@
     &--user-contacts {
       flex-direction: column;
       padding-top: 48px;
-      padding-bottom: 54px;
+      padding-bottom: 50px;
 
       .form__container {
-        margin-bottom: 26px;
+        margin-bottom: 22px;
       }
     }
 
@@ -234,7 +246,6 @@
 
 @media (min-width: $tablet-size) {
   .form__list-item {
-
     &--radio,
     &--checkbox {
       margin-bottom: 58px;
@@ -353,15 +364,41 @@
 
 @media (min-width: $tablet-size) and (max-width: $desktop-size) {
   .form__input-wrapper {
+    flex-grow: 1;
+    width: auto;
+
     &--phone {
-      &::after {
-        right: 25px;
+      svg {
+        top: 12px;
+        right: 28px;
       }
     }
 
     &--email {
-      &::after {
-        right: 17px;
+      svg {
+        top: 13px;
+        right: 23px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .form__input-wrapper {
+    flex-grow: 1;
+    width: auto;
+
+    &--phone {
+      svg {
+        top: 12px;
+        right: 10px;
+      }
+    }
+
+    &--email {
+      svg {
+        top: 13px;
+        right: 6px;
       }
     }
   }
@@ -407,8 +444,10 @@
 
     &--phone,
     &--email {
+      padding-left: 17px;
       box-sizing: border-box;
       width: 100%;
+      height: 54px;
     }
   }
 }
@@ -440,6 +479,9 @@
 
 @media (min-width: $tablet-size) {
   .form__text-area {
+    flex-grow: 1;
+    width: auto;
+
     font-size: 19px;
     line-height: 18px;
   }

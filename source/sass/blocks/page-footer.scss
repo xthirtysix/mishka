@@ -13,6 +13,14 @@
 
     &--form {
       margin-top: 34px;
+
+      .copyright__text {
+        padding-bottom: 5px;
+      }
+    }
+
+    &--catalog {
+      margin-top: 42px;
     }
   }
 }
@@ -25,7 +33,7 @@
       margin-top: 35px;
     }
 
-    &--inner {
+    &--catalog {
       margin-top: 85px;
     }
   }

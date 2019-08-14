@@ -38,6 +38,13 @@
 
       background-size: 1250px 42px;
     }
+
+    &--catalog,
+    &--form {
+      &::after {
+        background-size: 1150px 34px;
+      }
+    }
   }
 }
 

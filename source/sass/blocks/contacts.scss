@@ -233,6 +233,10 @@
   }
 }
 
+.contacts__button {
+  font-size: 18px;
+}
+
 @media (min-width: $tablet-size) {
   .contacts__button {
     width: 230px;
