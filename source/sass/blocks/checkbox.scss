@@ -60,6 +60,14 @@
       }
     }
   }
+
+  &:focus {
+    & + .checkbox__label {
+      &::before {
+        outline: thin dotted;
+      }
+    }
+  }
 }
 
 @media (min-width: $tablet-size) {

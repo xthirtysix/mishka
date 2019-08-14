@@ -14,7 +14,9 @@
 
     &--opened {
       .main-nav__list {
-        display: block;
+        &--site-navigation {
+          display: block;
+        }
       }
 
       .main-nav__toggle {
@@ -253,6 +255,7 @@
 
   &--search,
   &--cart {
+
     &:hover,
     &:focus {
       svg {
@@ -273,6 +276,7 @@
 
   &:hover,
   &:focus {
+
     a,
     ::placeholder {
       opacity: 0.6;

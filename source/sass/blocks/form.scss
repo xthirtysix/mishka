@@ -193,13 +193,21 @@
 @media (min-width: $tablet-size) {
   .form__list {
     &--checkbox {
-      max-width: 875px;
+      max-width: 550px;
       flex-direction: row;
       flex-wrap: wrap;
 
       .form__list-item {
         min-width: 264px;
       }
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .form__list {
+    &--checkbox {
+      min-width: 875px;
     }
   }
 }
@@ -226,6 +234,7 @@
 
 @media (min-width: $tablet-size) {
   .form__list-item {
+
     &--radio,
     &--checkbox {
       margin-bottom: 58px;

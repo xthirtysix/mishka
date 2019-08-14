@@ -5,16 +5,15 @@
 
 @media (min-width: $tablet-size) {
   .production {
-    position: relative;
-
-    padding: 455px 50px 6px;
-    padding-top: 455px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
   }
 }
 
 @media (min-width: $desktop-size) {
   .production {
-    padding: 0 50px;
+    padding-left: 0 50px;
     display: flex;
   }
 }
@@ -27,23 +26,25 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
-
 
 @media (min-width: $desktop-size) {
   .production__wrapper {
     box-sizing: border-box;
+    position: relative;
 
-    width: 1050px;
+    padding-top: 18px;
+
+    max-width: 1049px;
     min-height: 455px;
     padding-right: 56px;
-    padding-left: 759px;
+    padding-left: 762px;
   }
 }
 
@@ -55,6 +56,7 @@
 
 @media (min-width: $tablet-size) {
   .production__title-container {
+    order: 1;
     margin-bottom: 7px;
     padding: 0 40px;
   }
@@ -82,7 +84,6 @@
 @media (min-width: $tablet-size) {
   .production__icon {
     margin-right: 33px;
-    padding-top: 19px;
   }
 }
 
@@ -100,7 +101,6 @@
 
 @media (min-width: $tablet-size) {
   .production__title {
-    padding-top: 37px;
     font-size: 20px;
   }
 }
@@ -149,20 +149,17 @@
 @media (min-width: $tablet-size) {
   .production__video-container {
     box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
+    order: 0;
 
-    width: 668px;
+    width: 666px;
     height: 455px;
-    margin: 0 50px;
     margin-bottom: 14px;
 
     border-bottom: 1px solid #ececec;
 
     svg {
-      top: 190px;
-      left: 300px;
+      top: 188px;
+      left: 283px;
     }
 
     img {
@@ -181,6 +178,10 @@
 
     width: 682px;
     height: 455px;
+
+    svg {
+      left: 290px;
+    }
   }
 }
 
@@ -195,6 +196,7 @@
 
 @media (min-width: $tablet-size) {
   .production__text {
+    order: 2;
     margin-bottom: 35px;
     padding: 0 40px;
 
@@ -216,6 +218,7 @@
 
 @media (min-width: $tablet-size) {
   .production__button {
+    order: 3;
     margin: 0 40px 45px;
   }
 }
