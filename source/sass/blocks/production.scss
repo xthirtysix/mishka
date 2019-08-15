@@ -5,23 +5,13 @@
 
 @media (min-width: $tablet-size) {
   .production {
-    display: flex;
-    flex-direction: column;
     padding-top: 0;
-  }
-}
-
-@media (min-width: $desktop-size) {
-  .production {
-    padding-left: 0 50px;
-    display: flex;
+    padding-bottom: 0;
   }
 }
 
 .production__wrapper {
-  display: flex;
-  flex-direction: column;
-
+  position: relative;
   border: 1px solid #ececec;
 
   &:hover,
@@ -34,82 +24,75 @@
   }
 }
 
-@media (min-width: $desktop-size) {
-  .production__wrapper {
-    box-sizing: border-box;
-    position: relative;
-
-    padding-top: 18px;
-
-    max-width: 1049px;
-    min-height: 455px;
-    padding-right: 56px;
-    padding-left: 762px;
-  }
-}
-
-.production__title-container {
-  display: flex;
-  align-items: center;
-  padding: 0 33px;
-}
-
 @media (min-width: $tablet-size) {
-  .production__title-container {
-    order: 1;
-    margin-bottom: 7px;
-    padding: 0 40px;
-  }
-}
-
-@media (min-width: $desktop-size) {
-  .production__title-container {
+  .production__container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    padding: 0;
-    padding-top: 22px;
-  }
-}
-
-.production__icon {
-  width: 32px;
-  margin-right: 25px;
-
-  path {
-    fill: $teal;
-  }
-}
-
-@media (min-width: $tablet-size) {
-  .production__icon {
-    margin-top: 8px;
-    margin-right: 33px;
   }
 }
 
 @media (min-width: $desktop-size) {
-  .production__icon {
-    margin-top: 0;
-    margin-right: auto;
+  .production__container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+
+    min-height: 455px;
+    margin-left: auto;
+    width: 345px;
+    padding-top: 18px;
+    padding-right: 56px;
+    padding-left: 56px;
   }
 }
 
 .production__title {
-  padding: 24px 0;
+  position: relative;
+
+  padding: 24px 0 24px 88px;
+
   font-size: 17px;
   line-height: 24px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    left: 32px;
+
+    display: block;
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/icon-video.svg");
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: $tablet-size) {
   .production__title {
+    order: 1;
+    padding-left: 104px;
+    margin-bottom: 8px;
     font-size: 20px;
+
+    &::before {
+      top: 18px;
+      left: 40px;
+    }
   }
 }
 
 @media (min-width: $desktop-size) {
   .production__title {
-    padding-top: 13px;
+    padding: 77px 0 24px 0;
+
+    &::before {
+      top: 22px;
+      left: 2px;
+    }
   }
 }
 
@@ -118,29 +101,6 @@
   margin-bottom: 18px;
 
   overflow: hidden;
-
-  svg {
-
-    position: absolute;
-    z-index: 10;
-    top: 37px;
-    left: 80px;
-
-    width: 101px;
-    height: 78px;
-
-    transition: 0.2s ease-in-out;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.2);
-    }
-
-    &:active {
-      transform: scale(0.8);
-      opacity: 0.8;
-    }
-  }
 
   img {
     width: 260px;
@@ -161,11 +121,6 @@
 
     border-bottom: 1px solid #ececec;
 
-    svg {
-      top: 188px;
-      left: 283px;
-    }
-
     img {
       width: 100%;
       height: 100%;
@@ -182,9 +137,62 @@
 
     width: 682px;
     height: 455px;
+  }
+}
 
-    svg {
-      left: 290px;
+
+.production__play-button {
+  display: block;
+  position: relative;
+
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    z-index: 10;
+    top: 37px;
+    left: 80px;
+
+    display: block;
+    width: 101px;
+    height: 78px;
+
+    transition: 0.2s ease-in-out;
+
+    background-image: url("../img/icon-play.svg");
+    background-size: 101px 78px;
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      transform: scale(1.2);
+    }
+  }
+
+  &:active {
+    &::after {
+      transform: scale(0.8);
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .production__play-button {
+    &::after {
+      top: 188px;
+      left: 282px;
+    }
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .production__play-button {
+    &::after {
+      left: 292px;
     }
   }
 }
