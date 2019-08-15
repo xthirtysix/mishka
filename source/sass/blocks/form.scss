@@ -212,9 +212,9 @@
 @media (min-width: $tablet-size) {
   .form__list {
     &--checkbox {
-      max-width: 550px;
       flex-direction: row;
       flex-wrap: wrap;
+      width: 550px;
 
       .form__list-item {
         width: 264px;
@@ -228,7 +228,8 @@
     justify-content: flex-start;
 
     &--checkbox {
-      max-width: 1000px;
+      flex-grow: 1;
+      width: auto;
     }
   }
 }
