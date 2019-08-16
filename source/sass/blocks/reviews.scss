@@ -3,10 +3,8 @@
 
   padding-top: 26px;
   margin-bottom: 30px;
-}
 
-@media (min-width: $tablet-size) {
-  .reviews {
+  @media (min-width: $tablet-size) {
     padding-top: 77px;
     margin-bottom: 110px;
 
@@ -26,11 +24,9 @@
       background-size: 350px 457px;
     }
   }
-}
 
-@media (min-width: $desktop-size) {
-  .reviews {
-    margin-bottom: 162px;
+  @media (min-width: $desktop-size) {
+    margin-bottom: 160px;
 
     &::before {
       top: 7px;
@@ -42,10 +38,8 @@
 .reviews__title {
   margin-left: -2px;
   margin-bottom: 24px;
-}
 
-@media (min-width: $tablet-size) {
-  .reviews__title {
+  @media (min-width: $tablet-size) {
     margin-left: -4px;
     margin-bottom: 48px;
   }
@@ -59,34 +53,27 @@
 .reviews__text {
   margin: 0;
   margin-bottom: 23px;
-}
 
-@media (min-width: $tablet-size) {
-  .reviews__text {
+  @media (min-width: $tablet-size) {
     margin-bottom: 56px;
 
     font-size: 17px;
     line-height: 30px;
   }
-}
 
-@media (min-width: $desktop-size) {
-  .reviews__text {
+  @media (min-width: $desktop-size) {
     margin-bottom: 37px;
     padding-right: 105px;
   }
 }
-
 
 .reviews__authors-name {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
   font-style: normal;
-}
 
-@media (min-width: $tablet-size) {
-  .reviews__authors-name {
+  @media (min-width: $tablet-size) {
     font-size: 18px;
   }
 }
@@ -105,10 +92,8 @@
   padding: 0;
 
   list-style: none;
-}
 
-@media (min-width: $tablet-size) {
-  .reviews__navigation {
+  @media (min-width: $tablet-size) {
     position: absolute;
     bottom: -4px;
     right: 50px;
@@ -154,26 +139,22 @@
   &:active {
     opacity: 0.3;
   }
-}
 
-@media (min-width: $tablet-size) {
-  .reviews__nav-button {
+  @media (min-width: $tablet-size) {
     border: none;
   }
 }
 
-@media (min-width: $tablet-size) {
-  .reviews__button {
+.reviews__button {
+  @media (min-width: $tablet-size) {
     position: absolute;
     top: 78px;
     right: 50px;
 
     width: 176px;
   }
-}
 
-@media (min-width: $desktop-size) {
-  .reviews__button {
+  @media (min-width: $desktop-size) {
     top: 85px;
   }
 }

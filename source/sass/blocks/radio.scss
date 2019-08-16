@@ -29,10 +29,8 @@
       border-color: #c7c7c7;
     }
   }
-}
 
-@media (min-width: $tablet-size) {
-  .radio__label {
+  @media (min-width: $tablet-size) {
     &::before {
       top: -16px;
 
@@ -70,10 +68,8 @@
       }
     }
   }
-}
 
-@media (min-width: $tablet-size) {
-  .radio__input {
+  @media (min-width: $tablet-size) {
     &:checked {
       & + .radio__label {
         &::after {

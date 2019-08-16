@@ -1,16 +1,12 @@
 .about-us {
   padding-top: 17px;
-}
 
-@media (min-width: $tablet-size) {
-  .about-us {
+  @media (min-width: $tablet-size) {
     padding-top: 40px;
     padding-bottom: 25px;
   }
-}
 
-@media (min-width: $desktop-size) {
-  .about-us {
+  @media (min-width: $desktop-size) {
     padding-top: 49px;
   }
 }
@@ -18,24 +14,19 @@
 .about-us__title {
   margin-left: -2px;
   margin-bottom: 32px;
-}
 
-@media (min-width: $tablet-size) {
-  .about-us__title {
+  @media (min-width: $tablet-size) {
     margin-bottom: 50px;
   }
 }
 
 .about-us__list {
-
   margin: 0;
   padding: 0;
 
   list-style: none;
-}
 
-@media (min-width: $tablet-size) {
-  .about-us__list {
+  @media (min-width: $tablet-size) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -56,7 +47,6 @@
 
     background-repeat: no-repeat;
   }
-
 
   &--flower {
     &::before {
@@ -135,10 +125,8 @@
       background-size: 33px 32px;
     }
   }
-}
 
-@media (min-width: $tablet-size) {
-  .about-us__item {
+  @media (min-width: $tablet-size) {
     width: 50%;
     max-width: 350px;
 
@@ -190,10 +178,8 @@
   &--rocket {
     width: 100%;
   }
-}
 
-@media (min-width: $tablet-size) {
-  .about-us__text {
+  @media (min-width: $tablet-size) {
     width: 300px;
     margin-bottom: 58px;
 

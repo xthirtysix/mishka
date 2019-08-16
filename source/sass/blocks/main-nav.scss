@@ -2,10 +2,8 @@
   position: relative;
 
   background-color: $white;
-}
 
-@media (max-width: $mobile-only) {
-  .main-nav {
+  @media (max-width: $mobile-only) {
     &--closed {
       .main-nav__list {
         display: none;
@@ -46,10 +44,8 @@
       }
     }
   }
-}
 
-@media (min-width: $tablet-size) {
-  .main-nav {
+  @media (min-width: $tablet-size) {
     display: flex;
     flex-direction: row;
   }
@@ -59,14 +55,12 @@
   position: relative;
 
   display: flex;
-  flex-grow: 2;
+  flex-grow: 1;
 
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
-}
 
-@media (min-width: $tablet-size) {
-  .main-nav__header {
+  @media (min-width: $tablet-size) {
     border-bottom: none;
   }
 }
@@ -84,10 +78,8 @@
   border: none;
 
   cursor: pointer;
-}
 
-@media (min-width: $tablet-size) {
-  .main-nav__button {
+  @media (min-width: $tablet-size) {
     display: none;
   }
 }
@@ -145,15 +137,12 @@
   &--sell-navigation {
     display: none;
   }
-}
 
-@media (min-width: $tablet-size) and (max-width: $desktop-size) {
-  .main-nav__list {
+  @media (min-width: $tablet-size) and (max-width: $desktop-size) {
     display: flex;
     flex-direction: row;
     width: auto;
     margin: 0;
-
 
     &--site-navigation {
       box-sizing: border-box;
@@ -171,10 +160,8 @@
       display: none;
     }
   }
-}
 
-@media (min-width: $desktop-size) {
-  .main-nav__list {
+  @media (min-width: $desktop-size) {
     display: flex;
     flex-direction: row;
     min-width: 380px;
@@ -203,7 +190,6 @@
     }
   }
 }
-
 
 .main-nav__item {
   position: relative;
@@ -255,7 +241,6 @@
 
   &--search,
   &--cart {
-
     &:hover,
     &:focus {
       svg {
@@ -276,7 +261,6 @@
 
   &:hover,
   &:focus {
-
     a,
     ::placeholder {
       opacity: 0.6;
@@ -288,10 +272,8 @@
       opacity: 0.3;
     }
   }
-}
 
-@media (min-width: $tablet-size) {
-  .main-nav__item {
+  @media (min-width: $tablet-size) {
     box-sizing: border-box;
 
     padding-top: 32px;
@@ -336,11 +318,8 @@
       }
     }
   }
-}
 
-
-@media (min-width: $desktop-size) {
-  .main-nav__item {
+  @media (min-width: $desktop-size) {
     width: auto;
     padding-top: 30px;
     padding-bottom: 34px;
@@ -399,10 +378,8 @@
 
 .main-nav__delivery {
   display: none;
-}
 
-@media (min-width: $tablet-size) {
-  .main-nav__delivery {
+  @media (min-width: $tablet-size) {
     position: absolute;
     top: 103px;
     right: 0;

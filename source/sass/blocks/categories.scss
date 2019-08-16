@@ -1,6 +1,4 @@
 .categories {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -8,10 +6,9 @@
   background-color: $teal;
 
   list-style: none;
-}
 
-@media (min-width: $tablet-size) {
-  .categories {
+  @media (min-width: $tablet-size) {
+    display: flex;
     flex-direction: row;
     justify-content: center;
   }
@@ -19,10 +16,8 @@
 
 .categories__container {
   width: 100%;
-}
 
-@media (min-width: $tablet-size) {
-  .categories__container {
+  @media (min-width: $tablet-size) {
     width: 50%;
   }
 }
@@ -138,10 +133,8 @@
     display: block;
     max-width: 120px;
   }
-}
 
-@media (min-width: $tablet-size) {
-  .categories__item {
+  @media (min-width: $tablet-size) {
     padding: 27px 35px 33px;
 
     font-size: 20px;

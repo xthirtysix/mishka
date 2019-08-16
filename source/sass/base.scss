@@ -31,10 +31,8 @@ img {
   &--gapless {
     padding: 0;
   }
-}
 
-@media (min-width: $tablet-size) {
-  .container {
+  @media (min-width: $tablet-size) {
     width: 768px;
     padding: 0 50px;
 
@@ -43,10 +41,8 @@ img {
       padding: 0 50px;
     }
   }
-}
 
-@media (min-width: $desktop-size) {
-  .container {
+  @media (min-width: $desktop-size) {
     width: 1150px;
     max-width: 1150px;
     padding: 0 50px;
@@ -83,7 +79,6 @@ img {
 .modal {
   z-index: 9000;
   position: fixed;
-
 
   &--closed {
     display: none;

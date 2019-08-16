@@ -28,10 +28,8 @@
       border-color: #c7c7c7;
     }
   }
-}
 
-@media (min-width: $tablet-size) {
-  .checkbox__label {
+  @media (min-width: $tablet-size) {
     &::before {
       top: -16px;
       width: 52px;
@@ -39,7 +37,6 @@
     }
   }
 }
-
 
 .checkbox__input {
   &:checked {
@@ -68,10 +65,8 @@
       }
     }
   }
-}
 
-@media (min-width: $tablet-size) {
-  .checkbox__input {
+  @media (min-width: $tablet-size) {
     &:checked {
       & + .checkbox__label {
         &::after {
