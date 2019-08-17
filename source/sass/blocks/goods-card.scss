@@ -1,5 +1,5 @@
 .goods-card {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   &:hover,
   &:focus {
@@ -32,8 +32,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 27px;
-  padding-bottom: 24px;
+  padding: 23px 27px;
 
   border: 1px solid #ededed;
 
@@ -87,7 +86,7 @@
 
 .goods-card__title {
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 
   font-size: 17px;
   line-height: 24px;
@@ -107,10 +106,15 @@
 
   @media (min-width: $tablet-size) {
     font-size: 20px;
+    margin-bottom: 8px;
 
     &--toy-basket {
       padding-right: 50px;
     }
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-bottom: 5px;
   }
 }
 
@@ -137,7 +141,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 18px;
+  padding: 22px 0 4px;
 
   border-top: 1px solid #ececec;
 
@@ -153,8 +157,12 @@
 }
 
 .goods-card__price {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 24px;
+
+  @media (min-width: $tablet-size) {
+    font-size: 17px;
+  }
 }
 
 .goods-card__cart {

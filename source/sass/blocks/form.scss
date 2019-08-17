@@ -13,14 +13,14 @@
     position: relative;
     display: flex;
     width: 768px;
-    padding-left: 167px;
+    padding-left: 218px;
     padding-right: 50px;
   }
 
   @media (min-width: $desktop-size) {
     width: 1150px;
     max-width: 1150px;
-    padding-left: 167px;
+    padding-left: 225px;
     padding-right: 225px;
   }
 }
@@ -101,7 +101,8 @@
 
   @media (min-width: $desktop-size) {
     &--additional {
-      padding-bottom: 47px;
+      padding-top: 48px;
+      padding-bottom: 49px;
     }
   }
 }
@@ -110,6 +111,7 @@
   position: relative;
 
   display: block;
+  width: 100%;
   min-width: 64px;
   margin-bottom: 34px;
 
@@ -161,32 +163,24 @@
     box-sizing: border-box;
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 52px;
 
-    width: 167px;
-    max-width: 167px;
+    width: auto;
 
     &::before {
       display: none;
     }
 
-    &--name {
-      padding-top: 19px;
-    }
-
+    &--name,
     &--phone,
-    &--email {
-      padding-top: 19px;
-    }
-
+    &--email,
     &--additional {
-      padding-top: 19px;
+      top: 19px;
     }
   }
 
   @media (min-width: $desktop-size) {
-    min-width: 175px;
-    padding-left: 63px;
+    left: 112px;
   }
 }
 
@@ -384,7 +378,8 @@
 }
 
 .form__text-input {
-  flex-grow: 1;
+  vertical-align: top;
+  width: 260px;
   height: 48px;
 
   font-size: 17px;
@@ -418,6 +413,8 @@
 
   @media (min-width: $tablet-size) {
     vertical-align: top;
+
+    flex-grow: 1;
     height: 50px;
     padding-left: 19px;
 
@@ -501,6 +498,7 @@
 
   @media (min-width: $tablet-size) {
     margin: 0;
+    margin-top: -4px;
 
     font-size: 17px;
     line-height: 30px;
