@@ -1,9 +1,7 @@
 .page-header {
   width: 100%;
-}
 
-@media (min-width: $tablet-size) {
-  .page-header {
+  @media (min-width: $tablet-size) {
     border-bottom: 1px solid #ececec;
   }
 }
@@ -15,16 +13,12 @@
   margin: 0 auto;
 
   background-color: $white;
-}
 
-@media (min-width: $tablet-size) {
-  .page-header__container {
+  @media (min-width: $tablet-size) {
     width: 768px;
   }
-}
 
-@media (min-width: $desktop-size) {
-  .page-header__container {
+  @media (min-width: $desktop-size) {
     width: 1150px;
   }
 }
@@ -45,16 +39,12 @@
   &:active {
     opacity: 0.3;
   }
-}
 
-@media (min-width: $tablet-size) {
-  .page-header__logo {
+  @media (min-width: $tablet-size) {
     margin-left: 0;
   }
-}
 
-@media (min-width: $desktop-size) {
-  .page-header__logo {
+  @media (min-width: $desktop-size) {
     margin: auto;
   }
 }

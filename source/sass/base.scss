@@ -31,10 +31,8 @@ img {
   &--gapless {
     padding: 0;
   }
-}
 
-@media (min-width: $tablet-size) {
-  .container {
+  @media (min-width: $tablet-size) {
     width: 768px;
     padding: 0 50px;
 
@@ -43,10 +41,8 @@ img {
       padding: 0 50px;
     }
   }
-}
 
-@media (min-width: $desktop-size) {
-  .container {
+  @media (min-width: $desktop-size) {
     width: 1150px;
     max-width: 1150px;
     padding: 0 50px;
@@ -78,4 +74,37 @@ img {
   clip: rect(0 0 0 0);
 
   overflow: hidden;
+}
+
+.modal {
+  z-index: 9000;
+  position: fixed;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8999;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
 }

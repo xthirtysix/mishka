@@ -1,11 +1,10 @@
 .page-main__header {
-  position: relative;
   padding: 30px;
   background-color: #f1f1f1;
-}
 
-@media (min-width: $tablet-size) {
-  .page-main__header {
+  @media (min-width: $tablet-size) {
+    position: relative;
+
     &::after {
       content: "";
 
@@ -18,31 +17,53 @@
 
       z-index: 1000;
 
-      background-image: url("/img/bg-zigzag-fill.svg");
-      background-repeat: repeat;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 50% 0;
       background-size: 770px 24px;
+    }
+  }
+
+  @media (min-width: $desktop-size) {
+    &::after {
+      bottom: -14px;
+
+      height: 34px;
+
+      background-size: 1250px 42px;
+    }
+
+    &--catalog,
+    &--form {
+      &::after {
+        background-size: 1150px 34px;
+      }
     }
   }
 }
 
 .page-main__title {
   max-width: 260px;
-  margin: auto;
-  margin-top: 45px;
-  margin-bottom: 45px;
+  margin: 42px auto 46px;
 
   font-size: 27px;
-
   text-align: center;
-}
 
-@media (min-width: $tablet-size) {
-  .page-main__title {
+  @media (min-width: $tablet-size) {
     max-width: 100%;
-    margin-top: 100px;
-    margin-bottom: 85px;
+    margin-top: 65px;
+    margin-bottom: 52px;
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $desktop-size) {
+    min-width: 700px;
+    margin-top: 63px;
+    margin-bottom: 80px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }

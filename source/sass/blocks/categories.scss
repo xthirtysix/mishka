@@ -1,54 +1,93 @@
 .categories {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   margin: 0;
   padding: 0;
 
-  background-color: transparent;
+  background-color: $teal;
 
   list-style: none;
-}
 
-@media (min-width: $tablet-size) {
-  .categories {
+  @media (min-width: $tablet-size) {
+    display: flex;
     flex-direction: row;
     justify-content: center;
   }
 }
 
 .categories__container {
-  position: relative;
-  width: 320px;
-  margin: 0 auto;
-  height: 103px;
+  width: 100%;
 
-  background-color: $teal;
+  @media (min-width: $tablet-size) {
+    width: 50%;
+  }
+}
+
+.categories__item {
+  box-sizing: border-box;
+  position: relative;
+
+  display: block;
+  padding: 25px 0 30px 30px;
+
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+  color: $white;
+
+  transition: 0.2s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 5px;
+
+    transition: 0.2s ease-in-out;
+  }
 
   &::after {
     content: "";
 
     position: absolute;
 
+    display: block;
+
     opacity: 0.2;
-    transition: ease-in-out 0.2s;
   }
 
   &--interrior {
+    background-color: $teal;
+
     &::after {
       top: 23px;
       right: 36px;
 
-      width: 41px;
+      width: 40px;
       height: 62px;
 
-      background-image: url("/img/icon-interior.svg");
-      background-size: 41px 62px;
+      background-image: url("../img/icon-interior.svg");
+      background-size: 40px 62px;
       background-repeat: no-repeat;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $teal-hover;
+
+      &::before {
+        background-color: $teal-hover;
+      }
     }
   }
 
   &--toys {
+    background-color: $teal-dark;
+
     &::after {
       top: 20px;
       right: 27px;
@@ -56,105 +95,33 @@
       width: 60px;
       height: 61px;
 
-      background-image: url("/img/icon-toy.svg");
+      background-image: url("../img/icon-toy.svg");
       background-size: 60px 61px;
       background-repeat: no-repeat;
     }
-  }
-
-  &:focus,
-  &:hover {
-    .categories__item {
-      padding-bottom: 35px;
-    }
-
-    &::after {
-      top: 25px;
-
-      opacity: 0.3;
-    }
-  }
-
-  &:active {
-    &::after {
-      opacity: 0.07;
-    }
-  }
-}
-
-@media (min-width: $tablet-size) {
-  .categories__container {
-    width: 100%;
-    height: 119px;
-
-    &:hover,
-    &:focus {
-      .categories__item {
-        padding-bottom: 40px;
-      }
-    }
-
-    &--interrior {
-      &::after {
-        top: 30px;
-      }
-
-      &:hover {
-        &::after {
-          top: 20px;
-        }
-      }
-    }
-
-    &--toys {
-      &::after {
-        top: 30px;
-        right: 34px;
-      }
-
-      &:hover {
-        &::after {
-          top: 20px;
-        }
-      }
-    }
-  }
-}
-
-.categories__item {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
-  padding: 25px 29px 30px;
-  padding-right: 160px;
-
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 24px;
-  color: $white;
-
-  transition: ease-in-out 0.2s;
-
-  &--interrior {
-    background-color: $teal;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $teal-hover;
-    }
-  }
-
-  &--toys {
-    background-color: $teal-dark;
 
     &:hover,
     &:focus,
     &:active {
       background-color: #46c1ae;
+
+      &::before {
+        background-color: #46c1ae;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: translateY(-5px);
+
+    &::before {
+      transform: translateY(5px);
+    }
+
+    &::after {
+      opacity: 0.3;
     }
   }
 
@@ -166,13 +133,24 @@
     display: block;
     max-width: 120px;
   }
-}
 
-@media (min-width: $tablet-size) {
-  .categories__item {
-    padding: 27px 35px 31px;
+  @media (min-width: $tablet-size) {
+    padding: 27px 35px 33px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &--interrior {
+      &::after {
+        top: 29px;
+      }
+    }
+
+    &--toys {
+      &::after {
+        top: 31px;
+        right: 35px;
+      }
+    }
   }
 }

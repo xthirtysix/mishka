@@ -1,15 +1,36 @@
 .separator {
   width: 320px;
   margin: 0 auto;
-}
 
-.separator svg {
-  width: 320px;
-  height: 8px;
+  path {
+    fill: #f1f1f1;
+  }
 
-  transform: rotate(180deg);
-}
+  svg {
+    width: 320px;
+    height: 8px;
 
-.separator path {
-  fill: #f1f1f1;
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: $tablet-size) {
+    width: 772px;
+
+    svg {
+      position: relative;
+
+      width: 772px;
+      height: 17px;
+    }
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 1050px;
+    margin: 0 auto;
+
+    svg {
+      width: 1050px;
+      height: 23px;
+    }
+  }
 }
