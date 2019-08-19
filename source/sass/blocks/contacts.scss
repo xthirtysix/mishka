@@ -179,6 +179,7 @@
   line-height: 0;
   text-align: center;
 
+  background-color: #f4e9d7;
   background-image: url("../img/map-mobile@1x.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -188,7 +189,7 @@
   }
 
   @media (min-width: $tablet-size) {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
     background-image: url("../img/map-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -225,6 +226,8 @@
   @media (min-width: $tablet-size) {
     width: 230px;
     margin: 0 auto;
+
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-size) {
