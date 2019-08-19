@@ -25,7 +25,6 @@
 
 .page-header__logo {
   margin: auto;
-  padding: 22px 0 21px 0;
 
   line-height: 0;
 
@@ -46,5 +45,22 @@
 
   @media (min-width: $desktop-size) {
     margin: auto;
+  }
+}
+
+.page-header__logo-image {
+  display: block;
+  width: 86px;
+  height: auto;
+  padding: 22px 0 21px 0;
+
+  @media (min-width: $tablet-size) {
+    width: 113px;
+    padding: 22px 0 20px 0;
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 149px;
+    padding: 8px 0 7px 0;
   }
 }
