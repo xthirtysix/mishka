@@ -46,6 +46,15 @@
 .page-footer__logo {
   display: none;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-size) {
     display: block;
     width: 185px;
