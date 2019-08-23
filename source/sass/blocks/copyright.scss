@@ -18,19 +18,19 @@
   width: 27px;
   height: 34px;
 
-  path {
+  .copyright__icon {
     fill: #63d1bb;
   }
 
   &:hover,
   &:focus {
-    path {
+    .copyright__icon {
       fill: #46c1ae;
     }
   }
 
   &:active {
-    path {
+    .copyright__icon {
       opacity: 0.3;
     }
   }

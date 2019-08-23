@@ -246,9 +246,7 @@
       svg {
         opacity: 1;
 
-        path {
-          fill: $teal;
-        }
+        fill: $teal;
       }
     }
 
@@ -276,8 +274,8 @@
   @media (min-width: $tablet-size) {
     box-sizing: border-box;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 29px;
+    padding-bottom: 33px;
 
     align-items: center;
     border: none;
@@ -298,7 +296,7 @@
       border-right: 1px solid #ececec;
 
       svg {
-        top: 36px;
+        top: 35px;
         left: 34px;
       }
 
@@ -313,8 +311,8 @@
       padding-right: 0;
 
       svg {
-        top: 34px;
-        left: 33px;
+        top: 35px;
+        left: 32px;
       }
     }
   }
@@ -356,6 +354,10 @@
 
     &--search {
       margin-left: auto;
+
+      svg {
+        left: 31px;
+      }
     }
   }
 }
