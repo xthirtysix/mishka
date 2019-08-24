@@ -187,6 +187,10 @@
       width: 60%;
       margin-left: 50px;
     }
+
+    &--buyer-navigation {
+      justify-content: flex-end;
+    }
   }
 }
 
@@ -199,23 +203,13 @@
   border-bottom: 1px solid #ececec;
   border-top: none;
 
-  svg {
-    position: absolute;
-
-    opacity: 0.2;
-  }
-
-  &--search {
-    svg {
-      top: 32px;
-      left: 32px;
-    }
-  }
-
   &--cart {
     svg {
+      position: absolute;
       top: 31px;
       left: 30px;
+
+      opacity: 0.2;
     }
   }
 
@@ -293,15 +287,6 @@
       padding-left: 67px;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
-
-      svg {
-        top: 35px;
-        left: 34px;
-      }
-
-      input {
-        display: none;
-      }
     }
 
     &--cart {
@@ -350,30 +335,53 @@
         border-right: 1px solid #ececec;
       }
     }
-
-    &--search {
-      margin-left: auto;
-
-      svg {
-        left: 31px;
-      }
-    }
   }
 }
 
-.main-nav__search-field {
+.main-nav__search-text {
+  margin: 0;
+
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
   color: $black;
 
+  @media (min-width: $tablet-size) {
+    display: none;
+  }
+}
+
+.main-nav__search-button {
+  position: absolute;
+  top: 32px;
+  left: 28px;
+
+  width: 22px;
+  height: 23px;
+  padding: 0;
+
+  background-color: transparent;
   border: none;
 
-  &::placeholder {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-    color: $black;
+  svg {
+    opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-size) {
+    top: 36px;
+    left: 33px;
+  }
+
+  @media (min-width: $desktop-size) {
+    left: 28px;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      opacity: 1;
+      fill: $teal;
+    }
   }
 }
 
