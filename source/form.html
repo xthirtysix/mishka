@@ -14,7 +14,7 @@
     <div class="page-header__container">
       <nav class="main-nav container container--gapless main-nav--no-js main-nav--closed">
         <div class="main-nav__header">
-          <a class="page-header__logo">
+          <a href="index.html" class="page-header__logo">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -27,35 +27,36 @@
           </button>
         </div>
         <ul class="main-nav__list main-nav__list--site-navigation">
-          <li class="main-nav__item main-nav__item--site-navigation">
-            <a href="catalog.html">Каталог товаров</a>
+          <li class="main-nav__item main-nav__item--catalog">
+            <a href="catalog.html" class="main-nav__item-link main-nav__item-link--catalog">Каталог товаров</a>
           </li>
-          <li class="main-nav__item main-nav__item--site-navigation">
-            <a href="form.html">Вязание на заказ</a>
+          <li class=" main-nav__item">
+            <a href="form.html" class="main-nav__item-link">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list main-nav__list--buyer-navigation">
+        <ul class=" main-nav__list main-nav__list--buyer-navigation">
           <li class="main-nav__item main-nav__item--search">
-            <button class="main-nav__search-button" aria-label="Поиск по сайту">
+            <a href="#" class="main-nav__item-link main-nav__item-link--search" aria-label="Поиск по сайту">
               <svg width="18" height="18">
                 <use xlink:href="img/sprite.svg#search-icon"></use>
               </svg>
-            </button>
-            <p class="main-nav__search-text">Поиск по сайту</p>
+              <span class="main-nav__search-text">Поиск по сайту</span>
+            </a>
           </li>
-          <li class="main-nav__item main-nav__item--cart cart-item">
-            <svg width="20" height="19" aria-hidden="true" role="presentation">
-              <use xlink:href="img/sprite.svg#cart-icon"></use>
-            </svg>
-            <a href="#">Корзина: <span class="cart-item__condition">пока пуста</span></a>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__item-link main-nav__item-link--cart">Корзина: пока пуста</span>
+              <svg width="20" height="19" aria-hidden="true" role="presentation">
+                <use xlink:href="img/sprite.svg#cart-icon"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <ul class="main-nav__list main-nav__list--sell-navigation">
-          <li class="main-nav__item main-nav__item--sell-navigation">
-            <a href="#">Новые поступления</a>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__item-link">Новые поступления</a>
           </li>
-          <li class="main-nav__item main-nav__item--sell-navigation">
-            <a href="#">Распродажа</a>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__item-link">Распродажа</a>
           </li>
         </ul>
         <a href="#" class="main-nav__delivery">Бесплатная доставка по России</a>
@@ -236,4 +237,5 @@
   <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
 </body>
+
 </html>

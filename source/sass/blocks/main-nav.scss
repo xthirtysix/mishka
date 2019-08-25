@@ -153,6 +153,12 @@
 
       justify-content: flex-start;
       padding: 0 50px;
+
+      .main-nav__item-link {
+        padding: 0;
+
+        font-size: 15px;
+      }
     }
 
     &--sell-navigation {
@@ -179,13 +185,27 @@
 
     &--sell-navigation {
       position: absolute;
-      top: 107px;
+      top: 106px;
       left: 0;
       z-index: 1;
 
       display: flex;
       width: 60%;
       margin-left: 50px;
+
+      .main-nav__item {
+        &:first-child {
+          min-width: 220px;
+        }
+      }
+
+      .main-nav__item-link {
+        padding: 0;
+        width: auto;
+        min-width: auto;
+
+        font-size: 15px;
+      }
     }
 
     &--buyer-navigation {
@@ -198,190 +218,128 @@
   position: relative;
 
   display: flex;
-  padding: 26px 15px 27px 75px;
 
   border-bottom: 1px solid #ececec;
   border-top: none;
 
-  &--cart {
-    svg {
-      position: absolute;
-      top: 31px;
-      left: 30px;
-
-      opacity: 0.2;
-    }
-  }
-
-  a {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-    color: $black;
-  }
-
-  &--sell-navigation {
-    margin-right: 60px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    a {
-      font-size: 15px;
-    }
-  }
-
-  &--search,
-  &--cart {
-    &:hover,
-    &:focus {
-      svg {
-        opacity: 1;
-
-        fill: $teal;
-      }
-    }
-
-    &:active {
-      svg {
-        opacity: 0.3;
-      }
-    }
-  }
-
-  &:hover,
-  &:focus {
-    a,
-    ::placeholder {
-      opacity: 0.6;
-    }
-  }
-
-  &:active {
-    a {
-      opacity: 0.3;
-    }
-  }
-
   @media (min-width: $tablet-size) {
-    box-sizing: border-box;
-
-    padding-top: 29px;
-    padding-bottom: 33px;
-
     align-items: center;
     border: none;
 
-    &--site-navigation {
-      width: 167px;
-      padding: 0;
-
-      a {
-        font-size: 15px;
-      }
+    &--catalog {
+      min-width: 167px;
     }
 
     &--search {
-      width: auto;
-      padding-left: 67px;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
-    }
-
-    &--cart {
-      justify-content: flex-end;
-      min-width: 265px;
-      padding-right: 0;
-
-      svg {
-        top: 35px;
-        left: 32px;
-      }
     }
   }
 
   @media (min-width: $desktop-size) {
-    width: auto;
-    padding-top: 30px;
-    padding-bottom: 34px;
-
-    a {
-      font-size: 17px;
-    }
-
-    &--sell-navigation {
-      padding: 0;
-
-      a {
-        font-size: 15px;
-        line-height: 24px;
-      }
-
-      &:first-child {
-        width: 185px;
-        margin-right: 35px;
-      }
-    }
-
-    &--site-navigation {
-      padding-left: 35px;
-
-      &:first-child {
-        width: 185px;
-        padding-left: 0;
-        padding-right: 35px;
-
-        border-right: 1px solid #ececec;
-      }
+    &--catalog {
+      border-right: 1px solid #ececec;
+      min-width: auto;
     }
   }
 }
 
-.main-nav__search-text {
-  margin: 0;
+.main-nav__item-link {
+  position: relative;
+
+  width: 100%;
+  padding: 26px 15px 28px 75px;
 
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
   color: $black;
 
-  @media (min-width: $tablet-size) {
-    display: none;
-  }
-}
-
-.main-nav__search-button {
-  position: absolute;
-  top: 32px;
-  left: 28px;
-
-  width: 22px;
-  height: 23px;
-  padding: 0;
-
-  background-color: transparent;
-  border: none;
-
   svg {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+
     opacity: 0.2;
   }
 
   @media (min-width: $tablet-size) {
-    top: 36px;
-    left: 33px;
+    padding: 30px 0 32px 83px;
+
+    &--catalog {
+      width: auto;
+    }
+
+    &--search {
+      display: block;
+      height: 24px;
+      padding-left: 82px;
+
+      svg {
+        top: 35px;
+        left: 33px;
+      }
+    }
+
+    &--cart {
+      svg {
+        top: 33px;
+        left: 32px;
+      }
+    }
   }
 
   @media (min-width: $desktop-size) {
-    left: 28px;
+    min-width: 184px;
+    padding-left: 34px;
+
+    font-size: 17px;
+
+    &--catalog {
+      padding-left: 0;
+    }
+
+    &--search {
+      min-width: 82px;
+      padding-left: 0;
+
+      svg {
+        top: 35px;
+        left: 32px;
+      }
+    }
+
+    &--cart {
+      padding-left: 82px;
+    }
   }
 
   &:hover,
   &:focus {
+    color: rgba($black, 0.6);
+
     svg {
       opacity: 1;
       fill: $teal;
     }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__search-text {
+  display: block;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+  text-align: left;
+
+  @media (min-width: $tablet-size) {
+    display: none;
   }
 }
 
