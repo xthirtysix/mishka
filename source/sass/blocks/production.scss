@@ -43,7 +43,7 @@
   @media (min-width: $desktop-size) {
     &::after {
       top: 0;
-      left: 682px;
+      left: 681px;
       right: 0;
       z-index: -1;
 
@@ -62,7 +62,7 @@
     box-sizing: border-box;
 
     width: 345px;
-    min-height: 455px;
+    min-height: 453px;
     margin-left: auto;
     padding-top: 18px;
     padding-right: 56px;
@@ -152,14 +152,14 @@
 
   @media (min-width: $desktop-size) {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -1px;
+    left: -1px;
 
-    width: 682px;
+    width: 683px;
     margin-bottom: 0;
 
     background-image: url("../img/video-desktop@1x.jpg");
-    background-size: 682px 455px;
+    background-size: 683px 455px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-desktop@2x.jpg");
