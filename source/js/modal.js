@@ -1,9 +1,9 @@
 let orderButton = document.querySelector(".product__button");
 let addToCartWindow = document.querySelector(".add-to-cart");
-let addToCartButton = document.querySelector(".add-to-cart__button");
+let addToCartButtons = document.querySelectorAll(".goods-card__cart");
 let modalBack = document.querySelector(".modal-background");
 
-let toggleModal = function(evt) {
+let toggleModal = function (evt) {
   evt.preventDefault();
   if (addToCartWindow.classList.contains("modal--opened")) {
     addToCartWindow.classList.remove("modal--opened");
@@ -18,6 +18,12 @@ let toggleModal = function(evt) {
   }
 };
 
-orderButton.addEventListener("click", toggleModal);
+if (orderButton) {
+  orderButton.addEventListener("click", toggleModal);
+};
+
 modalBack.addEventListener("click", toggleModal);
-addToCartButton.addEventListener("click", toggleModal);
+
+for (let i = 0; i < addToCartButtons.length; i++) {
+  addToCartButtons[i].addEventListener("click", toggleModal);
+}
