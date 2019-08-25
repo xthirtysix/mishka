@@ -257,10 +257,17 @@
 
   svg {
     position: absolute;
-    top: 30px;
-    left: 20px;
+    top: 31px;
+    left: 32px;
 
     opacity: 0.2;
+  }
+
+  &--cart {
+    svg {
+      top: 30px;
+      left: 30px;
+    }
   }
 
   @media (min-width: $tablet-size) {
