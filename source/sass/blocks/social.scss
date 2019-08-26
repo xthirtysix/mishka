@@ -34,7 +34,7 @@
 
   &:hover,
   &:focus {
-    path {
+    .social__icon {
       fill: #46c1ae;
     }
   }
@@ -42,4 +42,9 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+
+.social__icon {
+  fill: #231f20;
 }

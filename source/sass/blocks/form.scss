@@ -332,11 +332,13 @@
   &:hover,
   &:focus,
   &:active {
-    svg {
-      opacity: 1;
+    > .form__text-input {
+      border-color: $teal;
     }
 
-    path {
+    svg {
+      opacity: 1;
+
       fill: $teal;
     }
   }
@@ -409,6 +411,12 @@
   &:focus,
   &:active {
     border-color: $teal;
+
+    + svg {
+      opacity: 1;
+
+      fill: $teal;
+    }
   }
 
   @media (min-width: $tablet-size) {

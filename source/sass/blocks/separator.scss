@@ -1,14 +1,13 @@
-.separator {
+.separator__wrapper {
   width: 320px;
+
   margin: 0 auto;
 
-  path {
-    fill: #f1f1f1;
-  }
-
-  svg {
+  .separator__image {
     width: 320px;
     height: 8px;
+
+    fill: #f1f1f1;
 
     transform: rotate(180deg);
   }
@@ -16,7 +15,7 @@
   @media (min-width: $tablet-size) {
     width: 772px;
 
-    svg {
+    .separator__image {
       position: relative;
 
       width: 772px;
@@ -28,7 +27,7 @@
     width: 1050px;
     margin: 0 auto;
 
-    svg {
+    .separator__image {
       width: 1050px;
       height: 23px;
     }

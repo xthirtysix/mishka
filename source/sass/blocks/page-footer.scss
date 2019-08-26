@@ -48,7 +48,9 @@
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    svg {
+      fill: $teal;
+    }
   }
 
   &:active {

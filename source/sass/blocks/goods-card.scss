@@ -173,13 +173,13 @@
 
   overflow: hidden;
 
-  path {
+  .goods-card__cart-icon {
     opacity: 0.2;
   }
 
   &:hover,
   &:focus {
-    path {
+    .goods-card__cart-icon {
       fill: $teal;
       opacity: 1;
     }
