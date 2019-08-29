@@ -104,5 +104,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "images", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
