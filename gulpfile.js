@@ -48,7 +48,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/{bg-*,icon-*,logo-htmlacademy,logo-footer}.svg")
+  return gulp.src("source/img/{icon-*,logo-htmlacademy,logo-footer}.svg")
     .pipe(imagemin([
       imagemin.svgo({
         plugins: [
