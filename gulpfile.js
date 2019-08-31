@@ -82,6 +82,7 @@ gulp.task("html", function() {
   return gulp
     .src("source/*.html")
     .pipe(posthmtl([include()]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
