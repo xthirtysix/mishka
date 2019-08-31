@@ -5,8 +5,11 @@
     content: "";
 
     position: absolute;
-    bottom: 0;
+    bottom: -39px;
     left: 0;
+
+    width: 320px;
+    height: 6px;
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: 320px 6px;
@@ -33,11 +36,15 @@
       background-size: 1050px 23px;
     }
   }
+
   &--reviews {
     &::after {
+      bottom: -50px;
+
       @media (min-width: $tablet-size) {
         bottom: -131px;
       }
+
       @media (min-width: $desktop-size) {
         bottom: -185px;
       }
