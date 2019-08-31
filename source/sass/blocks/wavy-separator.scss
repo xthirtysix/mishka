@@ -1,0 +1,46 @@
+.wavy-separator {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 320px 6px;
+    background-repeat: no-repeat;
+
+    transform: rotate(180deg);
+
+    @media (min-width: $tablet-size) {
+      bottom: -67px;
+
+      width: 772px;
+      height: 20px;
+
+      background-size: 772px 17px;
+    }
+
+    @media (min-width: $desktop-size) {
+      bottom: -94px;
+      left: 50px;
+
+      width: 1050px;
+      height: 23px;
+
+      background-size: 1050px 23px;
+    }
+  }
+  &--reviews {
+    &::after {
+      @media (min-width: $tablet-size) {
+        bottom: -131px;
+      }
+      @media (min-width: $desktop-size) {
+        bottom: -185px;
+      }
+    }
+  }
+}
