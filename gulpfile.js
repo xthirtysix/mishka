@@ -36,7 +36,6 @@ gulp.task("js", function() {
   return gulp
     .src("source/js/**/*.js")
     .pipe(plumber())
-    .pipe(sourcemap.init())
     .pipe(
       babel({
         presets: ["@babel/env"]
@@ -44,9 +43,7 @@ gulp.task("js", function() {
     )
     .pipe(uglify())
     .pipe(rename({ suffix: ".min" }))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/js"))
-    .pipe(server.stream());
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("images", function() {
@@ -118,7 +115,6 @@ gulp.task("server", function() {
     "source/img/{bg-*,icon-*,logo-htmlacademy,logo-footer}.svg",
     gulp.series("sprite", "html", "refresh")
   );
-  gulp.watch("source/js/*/**.js", gulp.series("js", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
