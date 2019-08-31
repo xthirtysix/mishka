@@ -1,35 +1,27 @@
-.separator__wrapper {
+.separator {
   width: 320px;
+  height: 20px;
 
   margin: 0 auto;
 
-  .separator__image {
-    width: 320px;
-    height: 8px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: 320px 6px;
+  background-repeat: no-repeat;
 
-    fill: #f1f1f1;
-
-    transform: rotate(180deg);
-  }
+  transform: rotate(180deg);
 
   @media (min-width: $tablet-size) {
     width: 772px;
+    height: 20px;
 
-    .separator__image {
-      position: relative;
-
-      width: 772px;
-      height: 17px;
-    }
+    background-size: 772px 17px;
   }
 
   @media (min-width: $desktop-size) {
     width: 1050px;
+    height: 23px;
     margin: 0 auto;
 
-    .separator__image {
-      width: 1050px;
-      height: 23px;
-    }
+    background-size: 1050px 23px;
   }
 }

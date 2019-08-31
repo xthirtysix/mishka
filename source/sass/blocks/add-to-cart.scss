@@ -68,14 +68,6 @@
   border: 2px solid $teal;
 }
 
-.add-to-cart__radio {
-  &:focus {
-    + .add-to-cart__label {
-      outline: thin dotted;
-    }
-  }
-}
-
 .add-to-cart__label {
   box-sizing: border-box;
 

@@ -511,6 +511,10 @@
     font-size: 17px;
     line-height: 30px;
   }
+  @media (min-width: $desktop-size) {
+    margin-top: 0;
+    margin-right: -2px;
+  }
 }
 
 .form__button {
