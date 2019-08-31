@@ -2,11 +2,11 @@
   position: relative;
 
   padding-top: 26px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-size) {
     padding-top: 77px;
-    margin-bottom: 110px;
+    margin-bottom: 130px;
 
     &::before {
       content: "";
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $desktop-size) {
-    margin-bottom: 160px;
+    margin-bottom: 183px;
 
     &::before {
       top: 7px;
