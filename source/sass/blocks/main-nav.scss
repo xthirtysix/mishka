@@ -11,12 +11,6 @@
     }
 
     &--opened {
-      .main-nav__list {
-        &--site-navigation {
-          display: block;
-        }
-      }
-
       .main-nav__toggle {
         background-color: transparent;
 
