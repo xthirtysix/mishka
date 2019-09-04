@@ -1,10 +1,7 @@
 .page-header {
-  position: relative;
   width: 100%;
 
   background-color: $white;
-
-  border-bottom: 1px solid #ececec;
 
   @media (min-width: $tablet-size) {
     margin-bottom: -61px;
