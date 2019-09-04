@@ -31,14 +31,17 @@
           <span class="main-nav__toggle" aria-hidden="true"></span>
         </button>
       </div>
-      <ul class="main-nav__list main-nav__list--site-navigation">
-        <li class="main-nav__item main-nav__item--catalog">
-          <a href="catalog.html" class="main-nav__item-link main-nav__item-link--catalog">Каталог товаров</a>
-        </li>
-        <li class=" main-nav__item">
-          <a class="main-nav__item-link">Вязание на заказ</a>
-        </li>
-      </ul>
+      <div
+        class="main-nav__menu-container main-nav__menu-container--site-navigation main-nav__menu-container--inner-page">
+        <ul class="main-nav__list main-nav__list--site-navigation">
+          <li class="main-nav__item main-nav__item--catalog">
+            <a href="catalog.html" class="main-nav__item-link main-nav__item-link--catalog">Каталог товаров</a>
+          </li>
+          <li class=" main-nav__item">
+            <a class="main-nav__item-link main-nav__item-link--inactive">Вязание на заказ</a>
+          </li>
+        </ul>
+      </div>
       <ul class=" main-nav__list main-nav__list--buyer-navigation">
         <li class="main-nav__item main-nav__item--search">
           <a href="#" class="main-nav__item-link main-nav__item-link--search" aria-label="Поиск по сайту">
@@ -56,19 +59,21 @@
           </a>
         </li>
       </ul>
-      <ul class="main-nav__list main-nav__list--promo-navigation">
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__item-link">Новые поступления</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__item-link">Распродажа</a>
-        </li>
-        <li class="main-nav__item main-nav__item--delivery">
-          <a href="#" class="main-nav__item-link main-nav__item-link--delivery">Бесплатная доставка по России</a>
-        </li>
-      </ul>
+      <div
+        class="main-nav__menu-container main-nav__menu-container--promo-navigation main-nav__menu-container--inner-page">
+        <ul class="main-nav__list main-nav__list--promo-navigation">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__item-link">Новые поступления</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__item-link">Распродажа</a>
+          </li>
+        </ul>
+        <a href="#" class="main-nav__item-link main-nav__item-link--delivery">Бесплатная доставка по России</a>
+      </div>
     </nav>
   </header>
+
 
   <main class="page-main">
     <section class="page-main__header page-main__header--form">

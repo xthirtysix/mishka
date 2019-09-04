@@ -10,8 +10,6 @@
   background-repeat: no-repeat;
   background-color: #f9f9f9;
 
-  border-top: 1px solid #ececec;
-
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
@@ -42,7 +40,7 @@
   @media (min-width: $tablet-size) {
     max-width: 500px;
 
-    margin-top: 142px;
+    margin-top: 80px;
     margin-bottom: 375px;
   }
 
