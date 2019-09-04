@@ -118,10 +118,6 @@
   display: inline-block;
 
   min-width: 75px;
-
-  @media (min-width: $tablet-size) {
-    min-width: 72px;
-  }
 }
 
 .contacts__email {

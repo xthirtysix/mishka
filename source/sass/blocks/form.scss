@@ -343,7 +343,7 @@
     }
   }
 
-  @media (min-width: $tablet-size) and (max-width: $desktop-size) {
+  @media (min-width: $tablet-size) and (max-width: 1149px) {
     flex-grow: 1;
     width: auto;
 

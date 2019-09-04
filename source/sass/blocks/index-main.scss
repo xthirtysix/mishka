@@ -15,8 +15,9 @@
   }
 
   @media (min-width: $tablet-size) {
+    border-top: 1px solid #ececec;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: 50% 0;
+    background-position: 50% bottom;
     background-size: 1150px 746px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -40,7 +41,7 @@
   @media (min-width: $tablet-size) {
     max-width: 500px;
 
-    margin-top: 140px;
+    margin-top: 142px;
     margin-bottom: 375px;
   }
 

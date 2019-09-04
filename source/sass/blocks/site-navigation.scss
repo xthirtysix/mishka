@@ -1,0 +1,16 @@
+.site-navigation {
+  @media (min-width: $desktop-size) {
+    max-width: 450px;
+    flex-wrap: wrap;
+  }
+}
+
+.site-navigation__item {
+  @media (min-width: $desktop-size) {
+    &:nth-of-type(odd) {
+      .site-navigation__link {
+        padding-left: 0;
+      }
+    }
+  }
+}

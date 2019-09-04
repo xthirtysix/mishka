@@ -35,7 +35,7 @@ gulp.task("css", function () {
 
 gulp.task("js", function () {
   return gulp
-    .src("source/js/**/*.js")
+    .src(["source/js/**/*.js", "!source/js/**/*.min.js"])
     .pipe(plumber())
     .pipe(
       babel({
@@ -91,7 +91,7 @@ gulp.task("html", function () {
 
 gulp.task("copy", function () {
   return gulp
-    .src(["source/fonts/**/*.{woff,woff2}", "source/img/**", "source/*.ico"], {
+    .src(["source/fonts/**/*.{woff,woff2}", "source/img/**", "source/*.ico", "source/js/**/*.min.js"], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
