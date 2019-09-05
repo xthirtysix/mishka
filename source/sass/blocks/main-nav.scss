@@ -51,18 +51,26 @@
     }
 
     .main-nav__menu-container {
-      &--site-navigation {
-        order: 3;
-      }
-
-      &--promo-navigation {
-        order: 4;
-      }
+      order: 4;
+      width: 50%;
     }
 
     .main-nav__list {
+      &--site-navigation {
+        order: 3;
+        width: 50%;
+      }
+
       &--buyer-navigation {
         order: 2;
+      }
+    }
+
+    &--inner-page {
+      .main-nav__list {
+        &--site-navigation {
+          background-color: #f1f1f1;
+        }
       }
     }
   }
@@ -73,20 +81,17 @@
     }
 
     .main-nav__menu-container {
-      &--site-navigation {
-        order: 1;
-        box-sizing: border-box;
-
-        width: 465px;
-      }
+      width: 100%;
     }
 
     .main-nav__list {
+      &--site-navigation {
+        order: 1;
+        background-color: $white;
+      }
+
       &--buyer-navigation {
         order: 3;
-        box-sizing: border-box;
-
-        width: 465px;
       }
     }
   }
@@ -98,13 +103,12 @@
   width: 320px;
   margin: 0 auto;
 
-  @media (min-width: $tablet-size) and (max-width: 1149px) {
+  @media (min-width: $tablet-size) {
     margin: 0;
   }
 
   @media (min-width: $desktop-size) {
     width: 150px;
-    margin: 0 10px;
   }
 }
 
@@ -213,7 +217,6 @@
 
     &--buyer-navigation {
       justify-content: flex-end;
-      width: 348px;
 
       .main-nav__search-text {
         display: none;
@@ -221,7 +224,12 @@
     }
 
     &--site-navigation {
-      width: 334px;
+      box-sizing: border-box;
+      justify-content: flex-end;
+      padding-left: 50px;
+
+      background-color: #f9f9f9;
+      border-top: 1px solid #ececec;
 
       .main-nav__item-link {
         min-width: 167px;
@@ -238,8 +246,10 @@
 
   @media (min-width: $desktop-size) {
     &--site-navigation {
-      width: 100%;
-      padding-left: 25px;
+      justify-content: flex-start;
+      max-width: 500px;
+
+      background-color: $white;
 
       .main-nav__item {
         box-sizing: border-box;
@@ -264,7 +274,12 @@
     }
 
     &--buyer-navigation {
-      padding-right: 25px;
+      box-sizing: border-box;
+      flex-shrink: 2;
+
+      width: 50%;
+      max-width: 500px;
+      padding-right: 50px;
     }
 
     &--promo-navigation {
@@ -284,24 +299,13 @@
 .main-nav__menu-container {
   display: none;
 
-  &--site-navigation {
-    display: block;
-  }
-
   @media (min-width: $tablet-size) {
     display: flex;
+    justify-content: flex-start;
     width: 50%;
 
     background-color: #f9f9f9;
     border-top: 1px solid #ececec;
-
-    &--site-navigation {
-      justify-content: flex-end;
-    }
-
-    &--promo-navigation {
-      justify-content: flex-start;
-    }
 
     &--inner-page {
       background-color: #f1f1f1;
@@ -309,18 +313,7 @@
   }
 
   @media (min-width: $desktop-size) {
-    &--site-navigation {
-      display: block;
-      width: 450px;
-
-      background-color: $white;
-      border: none;
-    }
-
-    &--promo-navigation {
-      justify-content: center;
-      width: 100%;
-    }
+    justify-content: center;
   }
 }
 
