@@ -251,6 +251,7 @@
         }
 
         &:nth-of-type(even) {
+          max-width: 220px;
           padding-left: 35px;
         }
       }
@@ -285,10 +286,6 @@
 
   &--site-navigation {
     display: block;
-
-    .main-nav__item-link {
-      max-width: 220px;
-    }
   }
 
   @media (min-width: $tablet-size) {
