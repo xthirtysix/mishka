@@ -10,6 +10,14 @@ body {
   color: $graphite;
 
   background-color: $white;
+
+  @media (min-width: $tablet-size) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-size) {
+    min-width: 1150px;
+  }
 }
 
 a {

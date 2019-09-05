@@ -1,9 +1,9 @@
 .social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  width: 141px;
+  width: 181px;
   margin: auto;
   padding-left: 0;
 
@@ -12,6 +12,7 @@
 
 .social__link {
   display: block;
+  padding: 8px 20px;
 
   background-position: 50% 50%;
   background-repeat: no-repeat;

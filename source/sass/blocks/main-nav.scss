@@ -2,6 +2,8 @@
   width: 100%;
 
   @media (max-width: $mobile-only) {
+    border-bottom: 1px solid #ececec;
+
     &--closed {
       .main-nav__list {
         display: none;
@@ -65,6 +67,8 @@
   }
 
   @media (min-width: $desktop-size) {
+    min-width: 1150px;
+
     .main-nav__header {
       order: 2;
     }
@@ -98,7 +102,7 @@
   }
 
   @media (min-width: $desktop-size) {
-    width: auto;
+    width: 150px;
     margin: 0;
   }
 }
@@ -118,6 +122,7 @@
 
   @media (min-width: $desktop-size) {
     width: 149px;
+    margin-left: 0;
     padding: 8px 0 7px 0;
   }
 

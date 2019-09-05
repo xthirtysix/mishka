@@ -1,20 +1,28 @@
 .copyright__container {
-  margin: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
+  width: 260px;
+  margin: auto;
+  margin-top: 6px;
+
+  @media (min-width: $tablet-size) {
+    width: 210px;
+  }
 }
 
 .copyright__text {
-  margin-left: auto;
   margin-right: 30px;
-  margin-top: 2px;
 
   font-size: 19px;
   line-height: 18px;
+
+  @media (min-width: $tablet-size) {
+    margin-left: auto;
+  }
 }
 
 .copyright__link {
-  margin-right: auto;
   width: 27px;
   height: 34px;
 

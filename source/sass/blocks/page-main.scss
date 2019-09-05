@@ -28,6 +28,7 @@
     &::after {
       bottom: -14px;
 
+      min-width: 1150px;
       height: 34px;
 
       background-size: 1250px 42px;
@@ -51,7 +52,7 @@
 
   @media (min-width: $tablet-size) {
     max-width: 100%;
-    margin-top: 65px;
+    margin-top: 5px;
     margin-bottom: 52px;
 
     font-size: 43px;
@@ -60,7 +61,6 @@
 
   @media (min-width: $desktop-size) {
     min-width: 700px;
-    margin-top: 63px;
     margin-bottom: 80px;
 
     font-size: 53px;
