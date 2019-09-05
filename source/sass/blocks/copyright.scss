@@ -18,7 +18,7 @@
   line-height: 18px;
 
   @media (min-width: $tablet-size) {
-    margin-left: auto;
+    margin-left: 27px;
   }
 }
 
@@ -41,5 +41,9 @@
     .copyright__icon {
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: $tablet-size) {
+    margin-left: auto;
   }
 }
