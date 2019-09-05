@@ -12,14 +12,12 @@
   @media (min-width: $tablet-size) {
     position: relative;
     display: flex;
-    width: 768px;
+    width: 100%;
     padding-left: 218px;
     padding-right: 50px;
   }
 
   @media (min-width: $desktop-size) {
-    width: 1150px;
-    max-width: 1150px;
     padding-left: 225px;
     padding-right: 225px;
   }
@@ -197,7 +195,7 @@
     &--checkbox {
       flex-direction: row;
       flex-wrap: wrap;
-      width: 550px;
+      width: auto;
 
       .form__list-item {
         width: 264px;
@@ -480,20 +478,25 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-size) {
-    box-sizing: border-box;
-    justify-content: space-between;
+    width: 100%;
 
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    .form__container {
+      box-sizing: border-box;
+      justify-content: space-between;
 
-    min-width: 768px;
-    padding: 0 50px;
-  }
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
 
-  @media (min-width: $desktop-size) {
-    width: 1050px;
-    padding: 0 175px;
+      width: 100%;
+      padding: 0 50px;
+    }
+
+    @media (min-width: $desktop-size) {
+      .form__container {
+        padding: 0 225px;
+      }
+    }
   }
 }
 

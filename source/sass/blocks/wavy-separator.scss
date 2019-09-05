@@ -20,17 +20,17 @@
     @media (min-width: $tablet-size) {
       bottom: -67px;
 
-      width: 772px;
+      width: 100%;
       height: 20px;
 
-      background-size: 772px 17px;
+      background-size: 768px 17px;
     }
 
     @media (min-width: $desktop-size) {
       bottom: -94px;
-      left: 50px;
+      left: -50px;
 
-      width: 1050px;
+      width: 100%;
       height: 23px;
 
       background-size: 1050px 23px;

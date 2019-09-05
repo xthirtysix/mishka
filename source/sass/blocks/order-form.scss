@@ -29,7 +29,8 @@
   }
 
   @media (min-width: $desktop-size) {
-    width: 1150px;
+    width: 100%;
+    max-width: 1150px;
     margin-bottom: 7px;
     padding: 0 225px;
   }

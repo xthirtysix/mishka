@@ -10,14 +10,6 @@ body {
   color: $graphite;
 
   background-color: $white;
-
-  @media (min-width: $tablet-size) {
-    min-width: 768px;
-  }
-
-  @media (min-width: $desktop-size) {
-    min-width: 1150px;
-  }
 }
 
 a {
@@ -33,7 +25,8 @@ img {
 .container {
   box-sizing: border-box;
 
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 30px;
 
@@ -42,22 +35,23 @@ img {
   }
 
   @media (min-width: $tablet-size) {
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     padding: 0 50px;
 
     &--gapless {
-      width: $tablet-size;
+      width: 100%;
       padding: 0 50px;
     }
   }
 
   @media (min-width: $desktop-size) {
-    width: 1150px;
+    width: 100%;
     max-width: 1150px;
     padding: 0 50px;
 
     &--gapless {
-      width: 1150px;
+      width: 100%;
       padding: 0 50px;
     }
 

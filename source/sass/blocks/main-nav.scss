@@ -1,5 +1,6 @@
 .main-nav {
   width: 100%;
+  box-sizing: border-box;
 
   @media (max-width: $mobile-only) {
     border-bottom: 1px solid #ececec;
@@ -67,8 +68,6 @@
   }
 
   @media (min-width: $desktop-size) {
-    min-width: 1150px;
-
     .main-nav__header {
       order: 2;
     }
@@ -76,16 +75,18 @@
     .main-nav__menu-container {
       &--site-navigation {
         order: 1;
+        box-sizing: border-box;
 
-        width: 450px;
+        width: 465px;
       }
     }
 
     .main-nav__list {
       &--buyer-navigation {
         order: 3;
+        box-sizing: border-box;
 
-        width: 450px;
+        width: 465px;
       }
     }
   }
@@ -103,7 +104,7 @@
 
   @media (min-width: $desktop-size) {
     width: 150px;
-    margin: 0;
+    margin: 0 10px;
   }
 }
 
@@ -238,6 +239,7 @@
   @media (min-width: $desktop-size) {
     &--site-navigation {
       width: 100%;
+      padding-left: 25px;
 
       .main-nav__item {
         box-sizing: border-box;
@@ -258,6 +260,10 @@
 
         font-size: 17px;
       }
+    }
+
+    &--buyer-navigation {
+      padding-right: 25px;
     }
 
     &--promo-navigation {
