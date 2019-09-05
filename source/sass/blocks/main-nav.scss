@@ -285,6 +285,10 @@
 
   &--site-navigation {
     display: block;
+
+    .main-nav__item-link {
+      max-width: 220px;
+    }
   }
 
   @media (min-width: $tablet-size) {
