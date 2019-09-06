@@ -2,6 +2,14 @@
   width: 100%;
   box-sizing: border-box;
 
+  &--inner-page {
+    .main-nav__menu-container {
+      &::before {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+
   @media (max-width: $mobile-only) {
     border-bottom: 1px solid #ececec;
 
@@ -43,7 +51,7 @@
   @media (min-width: $tablet-size) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
 
     .main-nav__header {
@@ -52,13 +60,11 @@
 
     .main-nav__menu-container {
       order: 4;
-      width: 50%;
     }
 
     .main-nav__list {
       &--site-navigation {
         order: 3;
-        width: 50%;
       }
 
       &--buyer-navigation {
@@ -104,11 +110,8 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-size) {
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-size) {
     width: 150px;
+    margin: 0;
   }
 }
 
@@ -225,8 +228,9 @@
 
     &--site-navigation {
       box-sizing: border-box;
-      justify-content: flex-end;
-      padding-left: 50px;
+
+      width: 60%;
+      justify-content: flex-start;
 
       background-color: #f9f9f9;
       border-top: 1px solid #ececec;
@@ -247,7 +251,7 @@
   @media (min-width: $desktop-size) {
     &--site-navigation {
       justify-content: flex-start;
-      max-width: 500px;
+      width: 430px;
 
       background-color: $white;
 
@@ -277,9 +281,7 @@
       box-sizing: border-box;
       flex-shrink: 2;
 
-      width: 50%;
-      max-width: 500px;
-      padding-right: 50px;
+      width: 430px;
     }
 
     &--promo-navigation {
@@ -300,15 +302,33 @@
   display: none;
 
   @media (min-width: $tablet-size) {
+    position: relative;
+
     display: flex;
     justify-content: flex-start;
-    width: 50%;
+    width: 40%;
 
     background-color: #f9f9f9;
-    border-top: 1px solid #ececec;
 
     &--inner-page {
       background-color: #f1f1f1;
+    }
+
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 200vw;
+
+      display: block;
+      background-color: #f9f9f9;
+      border-top: 1px solid #ececec;
+
+      transform: translateX(-50%);
     }
   }
 
@@ -416,7 +436,7 @@
     }
 
     &--delivery {
-      width: 334px;
+      width: 300px;
 
       padding: 18px 0;
 

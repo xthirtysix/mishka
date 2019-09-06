@@ -1,5 +1,5 @@
 .goods-card {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   &:hover,
   &:focus {
@@ -139,12 +139,26 @@
 }
 
 .goods-card__buy {
+  position: relative;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 22px 0 4px;
 
-  border-top: 1px solid #ececec;
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 5px;
+    right: 5px;
+
+    height: 1px;
+
+    background-color: #ececec;
+  }
+
 
   @media (min-width: $tablet-size) {
     padding: 22px 4px 0;
@@ -154,6 +168,11 @@
     margin-top: auto;
     padding-left: 0;
     padding-right: 7px;
+
+    &::before {
+      left: 0;
+      right: 7px;
+    }
   }
 }
 
@@ -167,6 +186,7 @@
 }
 
 .goods-card__cart {
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   border: none;
